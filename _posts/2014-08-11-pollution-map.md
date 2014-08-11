@@ -13,6 +13,8 @@ We welcome [Pedro Cuhna](https://twitter.com/thecodingadvent) to our Map of The 
 
 Cunha created an interactive map with Dmitry Pavluk, Anna Young, and Diego Torres Quintanilla to provide a baseline understanding of air pollution around the world. The map was published by [The Atlantic magazine](the http://www.theatlantic.com/health/archive/2014/06/the-air-we-breathe/372411/?utm_content=buffer4bd04&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 
+<!--more-->
+
 This blog post summarizes how they managed to build this map:
 
 ### The project
