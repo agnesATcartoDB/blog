@@ -16,7 +16,7 @@ Soon, CartoDB will join the largest open-source geospatial conference, [FOSS4G](
 
 **Dynamic mapping on the web: building a scalable service for thousands of companies** (Friday, Sep 12th, 13:00 - 13:25) by [Javier Santana](https://javi.cartodb.com/) and [Alejandro Martinez](https://zenitram.cartodb.com/)
 
-**The unrelenting progress of design in open-source** (Friday, Sep 12h, 14:00 - 14:25) by [Sergio Leiva](https://saleiva.cartodb.com/)
+**The unrelenting progress of design in open-source** (Friday, Sep 12h, 14:00 - 14:25) by [Sergio Álvarez Leiva](https://saleiva.cartodb.com/)
 
 **Empowering people, popularizing open-source, and building a business** (Friday, Sep 12th, 15:30 - 15:55) by [Javier de la Torre](https://jatorre-cloud.cartodb.com/) and [Andrew Hill](https://andrew.cartodb.com/)
 
