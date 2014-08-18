@@ -1,5 +1,6 @@
 ---
 title: 'Map of the Week: Interactive Air-Pollution Map'
+date: '2014-08-18T15:55:00+01:00'
 tags:
 - cartodb
 - Air pollution
