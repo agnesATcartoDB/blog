@@ -17,6 +17,7 @@ gems:
   - jekyll-redirect-from
 
 cartodb-baseurl: 'http://cartodb.com'
+docs-baseurl: 'http://docs.cartodb.com'
 academy-baseurl: 'http://academy.cartodb.com'
 
 analytics_property_id: 'UA-20934186-3'
