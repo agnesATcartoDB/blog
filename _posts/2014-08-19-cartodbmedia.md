@@ -10,14 +10,14 @@ Every single day we see a huge influx of beautiful maps created using CartoDB. T
 
 ### The Telegraph: the best places to live in England and Wales
 
-<div class="wrap"><p><a href="http://www.telegraph.co.uk/finance/economics/11041812/Mapped-the-best-places-to-live-in-England-and-Wales.html" class="wrap-border"><img src="2014-08-19-cartodbmedia/map3.png" alt=""></a></p></div>
+<div class="wrap"><p><a href="http://www.telegraph.co.uk/finance/economics/11041812/Mapped-the-best-places-to-live-in-England-and-Wales.html" class="wrap-border"><img src="2014-08-19-cartodbmedia/media3.png" alt=""></a></p></div>
 
 Well known British newspaper, The Telegraph, created a map which allows you to search for the best places to live in England and Wales using official data on average weekly incomes, crime rates, health, home ownership, and economic activity.
 
 
 ### The Guardian: Which countries has the fewest ATM'S?
 
-<div class="wrap"><p><a href="http://www.theguardian.com/global-development-professionals-network/2014/aug/18/-sp-fewest-atms-interactive-map" class="wrap-border"><img src="2014-08-19-cartodbmedia/map1.png" alt=""></a></p></div>
+<div class="wrap"><p><a href="http://www.theguardian.com/global-development-professionals-network/2014/aug/18/-sp-fewest-atms-interactive-map" class="wrap-border"><img src="2014-08-19-cartodbmedia/media1.png" alt=""></a></p></div>
 
 The Guardian published a map to show, in an interactive way, the most recent World Bank data and highlights the countries  with the fewest ATM's in the world. 
 
@@ -26,7 +26,13 @@ The Guardian published a map to show, in an interactive way, the most recent Wor
 
 <iframe width='100%' height='520' frameborder='0' src='http://srogers.cartodb.com/viz/4a5eb582-23ed-11e4-bd6b-0e230854a1cb/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-Twitter compiled every geotagged tweet that mentioned Ferguson and made a interactive map with it. 
+Twitter compiled every geotagged tweet that mentioned Ferguson and made a interactive map with it. The map was published in lots of media around the US. 
+
+### El Mundo: Plan your holidays in Madrid 
+
+<div class="wrap"><p><a href="http://www.elmundo.es/elmundo/2014/graficos/ago/s2/ocio_madrid.html" class="wrap-border"><img src="2014-08-19-cartodbmedia/media4.png" alt=""></a></p></div>
+
+Are you going to spend your holidays in Madrid? The spanish newspaper, El Mundo, used the CartoDB tool Odyssey.js to show the best places to go in Madrid during the summer break. 
 
 ### Scandinavian media: Bárðarbunga volcano 
 
@@ -38,3 +44,4 @@ NRK, the largest media organisation in Norway, published a map made by the devel
 This map also appeared in three main Icelandic media outlets: [www.mbl.is](http://www.mbl.is/frettir/innlent/2014/08/19/forritarar_reyna_vid_bardarbungu/), [www.visir.is](http://www.visir.is/skjalftarnir-vid-bardarbungu-a-tiu-sekundum/article/2014140818912), [www.ruv.is](http://www.ruv.is/frett/skjalftarnir-vid-bardarbungu-a-10-sekundum)
 
 
+We are pleased to see media using our platform. If you want to do the same, go to [CartoDB](http://cartodb.com/), sign up for a free account and start creating your own maps. 
