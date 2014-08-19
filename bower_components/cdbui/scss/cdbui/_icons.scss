@@ -1,0 +1,99 @@
+/* =Icons
+----------------------------------------------- */
+
+@import 'icons/*.png';
+@include all-icons-sprites;
+
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+
+  &.i-hard { @include opacity(.8); }
+  &.i-medium { @include opacity(.6); }
+  &.i-grey { @include opacity(.35); }
+  &.i-light { @include opacity(.2); }
+  &.icons-arrow-right, &.icons-arrow-right-white { width: 15px; height: 10px; }
+  &.icons-mobile-nav, &.icons-mobile-nav-blue { width: 21px; height: 18px; }
+
+  &.i-big { width: 72px; height: 72px; }
+  &.i-xxl { width: 62px; height: 62px; }
+  &.i-xl { width: 44px; height: 44px; }
+  &.i-m { width: 24px; height: 24px; }
+  &.i-s { width: 16px; height: 16px; }
+  &.i-xs { width: 12px; height: 12px; }
+  &.i-xxs { width: 9px; height: 15px; }
+  &.i-media { width: 32px; height: 32px; }
+}
+
+.i-xs {
+  &.icons-arrow-down,
+  &.icons-arrow-down-white {
+    width: 7px;
+    height: 4px;
+    margin-left: 4px;
+  }
+}
+
+/* iconfont */
+
+[class^="iconFont-"], [class*=" iconFont-"] {
+  font-family: 'carto-icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.iFont-xxs { font-size: 12px; }
+.iFont-xs { font-size: 16px; }
+.iFont-m { font-size: 24px; }
+.iFont-xl { font-size: 72px; }
+
+.iconFont-check:before {
+  content: "\e001";
+}
+.check-ok {
+  color: #8EB83F;
+}
+.check-disabled {
+  color: #DDDDDD;
+}
+.icon-white {
+  color: #fff;
+}
+.icon-light {
+  opacity: .25;
+}
+.icon-medium {
+  opacity: .5;
+}
+.icon-dark {
+  opacity: .8;
+}
+
+.iconFont-share:before {
+  content: "\e002";
+}
+
+.iconFont-noLimits:before {
+  content: "\e003";
+}
+
+.iconFont-arrow:before {
+  content: "\e004";
+}
+
+.iconFont-vipSupport:before {
+  content: "\e005";
+}
+
+.iconFont-enterpriseReady:before {
+  content: "\e006";
+}
+
+.iconFont-checkSimple:before {
+  content: "\e007";
+}

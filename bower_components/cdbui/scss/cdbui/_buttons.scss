@@ -1,0 +1,159 @@
+/* =Buttons
+----------------------------------------------- */
+
+// <div class="btn btn-size(btn-medium/btn-large) btn-color(btn-white/btn-blue/btn-green) btn-backgroun">
+//   <span class="btn-border">text</span>
+// </div>
+// <a href="#"> class="btn btn-size(btn-medium/btn-large) btn-color(btn-white/btn-blue/btn-green) btn-background">
+//   <span class="btn-border">text</span>
+// </a>
+
+.btn-background { background: #fff; }
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  background: transparent;
+  @include border-radius(50px);
+  @include transition(all .15s);
+
+  &:hover { text-decoration: none; }
+
+  > span { display: block; }
+}
+
+.dark-section {
+  .btn {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-medium > span {
+  padding: 10px 20px;
+  @include border-radius(50px);
+  font: 12px/1 'Proxima Nova Sb';
+}
+
+.btn-large > span {
+  padding: 14px 35px;
+  @include border-radius(50px);
+  font: 14px/1 'Proxima Nova Sb';
+}
+
+.btn-white {
+  color: #fff;
+  border: 2px solid #fff;
+
+  a {
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  &:hover {
+    background: #fff;
+    color: #333;
+  }
+}
+
+.btn-green {
+  color: #8EB83F;
+
+  &.btn-highlight {
+    background: #8EB83F;
+    color: #fff;
+  }
+
+  a {
+    color: #8EB83F;
+    border: 2px solid #8EB83F;
+  }
+}
+
+a.btn-green {
+  color: #8EB83F;
+  border: 2px solid #8EB83F;
+
+  &:hover {
+    background: #8EB83F;
+    color: #fff;
+  }
+}
+
+a.btn-green.btn-highlight {
+  color: #fff;
+
+  &:hover {
+    background: #fff;
+    color: #8EB83F;
+  }
+}
+
+.btn-blue {
+  color: #397EB9;
+
+  a {
+    color: #397EB9;
+    border: 2px solid #397EB9;
+  }
+}
+
+button.btn-blue .btn-border {
+  color: #397EB9;
+  border: 2px solid #397EB9;
+
+  &:hover {
+      background: #397EB9;
+      color: #fff;
+   }
+}
+
+a.btn-blue {
+  color: #397EB9;
+  border: 2px solid #397EB9;
+
+  &:hover{
+    background: #397EB9;
+    color: #fff;
+  }
+}
+
+.btn-grey {
+  color: #999;
+
+  a {
+    color: #999;
+    border: 2px solid #999;
+  }
+}
+
+a.btn-grey {
+  color: #999;
+  border: 2px solid #999;
+
+  &:hover {
+    background: #999;
+    color: #fff;
+  }
+}
+
+.btn-orange {
+  color: #F19740;
+
+  a {
+    color: #999;
+    border: 2px solid #F19740;
+  }
+}
+
+a.btn-orange {
+  color: #F19740;
+  border: 2px solid #F19740;
+
+  &:hover {
+    background: #F19740;
+    color: #fff;
+  }
+}
