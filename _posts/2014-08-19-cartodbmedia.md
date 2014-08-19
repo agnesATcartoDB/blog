@@ -19,7 +19,7 @@ Well known British newspaper, The Telegraph, created a map which allows you to s
 
 ### The Guardian: Which countries has the fewest ATM'S?
 
-<div class="wrap"><p><a href="http://www.theguardian.com/global-development-professionals-network/2014/aug/18/-sp-fewest-atms-interactive-map" class="wrap-border"><img src="/img/posts/2014-08-19-cartodbmedia/media1.pngg" alt=""></a></p></div>
+<div class="wrap"><p><a href="http://www.theguardian.com/global-development-professionals-network/2014/aug/18/-sp-fewest-atms-interactive-map" class="wrap-border"><img src="/img/posts/2014-08-19-cartodbmedia/media1.png" alt=""></a></p></div>
 
 The Guardian published a map to show, in an interactive way, the most recent World Bank data and highlights the countries  with the fewest ATM's in the world. 
 
