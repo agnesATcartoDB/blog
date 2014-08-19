@@ -10,7 +10,7 @@ categories:
 
 <div class="wrap"><p><a href="http://epi.yale.edu/pollution-map/" class="wrap-border"><img src="/img/posts/2014-08-11-pollution-map/mappollution.png" alt=""></a></p></div>
 
-We welcome [Pedro Cuhna](https://twitter.com/thecodingadvent) to our Map of The Week series. He’s a developer currently working in [Startup Institute](https://www.linkedin.com/company/2634553?trk=prof-exp-company-name).
+We welcome [Pedro Cuhna](https://twitter.com/thecodingadvent) to our Map of The Week series. He’s a developer currently working in [Startup Institute](https://www.linkedin.com/company/2634553?trk=prof-exp-company-name) as a freelancer. Check some of his work [here](http://spinsomewebs.com/about-2/).
 
 Cunha created an interactive map with Dmitry Pavluk, Anna Young, and Diego Torres Quintanilla to provide a baseline understanding of air pollution around the world. The map was published by [The Atlantic magazine](the http://www.theatlantic.com/health/archive/2014/06/the-air-we-breathe/372411/?utm_content=buffer4bd04&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 
@@ -19,7 +19,7 @@ Cunha created an interactive map with Dmitry Pavluk, Anna Young, and Diego Torre
 This blog post summarizes how they managed to build this map:
 
 ### The project
-It was a warm day at the EcoHack hackathon, which took place in the Brooklyn offices of Etsy. My team and I were huddled around a table that was scattered with Macbooks. We delegated the work between three smaller teams. One team worked on creating an API, the other team fif the data mining, the heart of this hackathon, and my team worked on the visualization of this data. 
+It was a warm day at the EcoHack hackathon, which took place in the Brooklyn offices of Etsy. My team and I were huddled around a table that was scattered with Macbooks. We delegated the work between three smaller teams. One team worked on creating an API, the other team did the data mining, the heart of this hackathon, and my team worked on the visualization of this data. 
 
 Dmitry Pavluk, a self-proclaimed data nerd, helped me with building the map. Our first choice was a color layout that would present the data in a beautiful and interpretive way. We chose a color scale that ranged from beige to red because it provided a good contrast for our data. We started out by using the CartoDB web application. We imported all of the geolocation data and made a rough mockup of what the map would look like. This data consisted of two main components: the world borders to delimit countries, and the data provided by the WHO on particulate matter levels in countries and cities. More on cities later.  
 
