@@ -37,6 +37,12 @@
     height: 43px;
     background: image-url('brand.png');
   }
+
+  &.navbar-blue-brand {
+    a {
+      background: image-url('brand-blue.png');
+    }
+  }
 }
 
 .navbar-inner {
@@ -151,6 +157,10 @@
 }
 
 .header {
+  padding-top: 136px;
+  margin-top: -136px;
+  background: image-url('backgrounds/header_bkg.png');
+
   position: relative;
   padding-bottom: 60px;
 
@@ -164,6 +174,10 @@
     z-index: 0;
     pointer-events: none;
   }
+
+  .tit-section {
+    margin-bottom: 5px;
+  }
 }
 
 .offcanvas-inner {
@@ -176,11 +190,14 @@
 
   /* white */
   &.white_layout {
-    background: #fff image-url('backgrounds/header_bkg.png');
-    color: #333;
+    background: #fff;
 
-    .header:after {
-      @include background-image(linear-gradient(rgba(#fff, 0), rgba(#fff, 1)));
+    .header {
+      color: #333;
+
+      &:after {
+        @include background-image(linear-gradient(rgba(#fff, 0), rgba(#fff, 1)));
+      }
     }
 
     .navbar {
@@ -188,8 +205,10 @@
       border-bottom: 1px solid rgba(#000, .12);
     }
 
-    .navbar-brand a {
-      background: image-url('brand-blue.png');
+    .navbar-brand {
+      a {
+        background: image-url('brand-blue.png');
+      }
     }
 
     .navbar-inner {
@@ -254,6 +273,46 @@
   }
 }
 
+@keyframes bg {
+  0% { background-color: #3B7EBB; }
+  50% { background-color: #273440; }
+  100% { background-color: #3B7EBB; }
+}
+
+@-webkit-keyframes bg {
+  0% { background-color: #3B7EBB; }
+  50% { background-color: #273440; }
+  100% { background-color: #3B7EBB; }
+}
+
+.blue_layout,
+.dark_layout {
+  .header {
+    color: #fff;
+
+    .tit-section,
+    .tit-module,
+    .sub-section {
+      color: #fff;
+
+      a { color: #fff; }
+    }
+
+    &.animated {
+      animation-name: bg;
+      animation-duration: 60s;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: bg;
+      -webkit-animation-duration: 60s;
+      -webkit-animation-iteration-count: infinite;
+    }
+
+    &:after {
+      @include background-image(linear-gradient(rgba(#3b7ebb, 0), rgba(#3b7ebb, 1)));
+    }
+  }
+}
+
 @media (max-width: $large-width) {
   .offcanvas-inner {
     position: relative;
@@ -265,7 +324,6 @@
     .icons-arrow-down-white {
       display: none;
     }
-
 
     .tooltip {
       display: block !important;

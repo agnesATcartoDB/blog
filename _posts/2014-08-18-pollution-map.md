@@ -16,7 +16,7 @@ Cunha created an interactive map with Dmitry Pavluk, Anna Young, and Diego Torre
 
 <!--more-->
 
-This blog post summarizes how they managed to build this map:
+This blog post summarizes how they managed to build this map.
 
 ### The project
 It was a warm day at the EcoHack hackathon, which took place in the Brooklyn offices of Etsy. My team and I were huddled around a table that was scattered with Macbooks. We delegated the work between three smaller teams. One team worked on creating an API, the other team did the data mining, the heart of this hackathon, and my team worked on the visualization of this data. 
@@ -187,8 +187,6 @@ You probably recognize the code above. That’s right, it creates a sublayer. No
 #pm25_na [ {0} <= 2.98] {
    polygon-fill: #fff74b;
 }
-
-
 
     </script>
 {% endhighlight %}
