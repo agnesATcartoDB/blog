@@ -44,13 +44,14 @@
       <script src="{{ page.js_asset | append: '.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
     {% endif %}
   {% else %}
-    <script src="{{ '/js/vendor/jquery.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/js/vendor/underscore.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/js/vendor/backbone.js' | prepend: site.baseurl }}"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/underscore/underscore.js"></script>
+    <script src="/bower_components/backbone/backbone.js"></script>
     <script src="{{ '/js/app.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/js/index.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/js/ui/navbar.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/js/ui/tooltip.js' | prepend: site.baseurl }}"></script>
+    <script src="/bower_components/cdbui/js/cdbui/cdbui.js"></script>
+    <script src="/bower_components/cdbui/js/cdbui/cdbui.navbar.js"></script>
+    <script src="/bower_components/cdbui/js/cdbui/cdbui.tooltip.js"></script>
     {% if page.js_asset %}
       <script src="{{ page.js_asset | append: '.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
     {% endif %}

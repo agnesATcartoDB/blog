@@ -4,5 +4,4 @@ _site
 .DS_Store
 .tmp/
 .ruby-version
-bower_components/
 grunt-aws.json

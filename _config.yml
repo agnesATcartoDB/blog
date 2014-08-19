@@ -17,7 +17,9 @@ gems:
   - jekyll-redirect-from
 
 cartodb-baseurl: 'http://cartodb-staging.com'
+docs-baseurl: 'http://docs.cartodb-staging.com'
 academy-baseurl: 'http://academy.cartodb.com'
+docs-baseurl: 'http://docs.cartodb-staging.com'
 
 analytics_property_id: ''
 mixpanel_token: ''
@@ -27,6 +29,6 @@ defaults:
   -
     scope:
       path: ""
-      type: "post"
+      type: "posts"
     values:
       layout: post

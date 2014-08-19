@@ -90,3 +90,5 @@ grunt deploy:staging|production
 ```
 
 You'll need a `grunt-aws.json` credentials file.
+
+**There's a hook set up so when pushing to _master_ it is automatically deployed to production**
