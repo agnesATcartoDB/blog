@@ -21,12 +21,12 @@ Well known British newspaper, The Telegraph, created a map which allows you to s
 
 <div class="wrap"><p><a href="http://www.theguardian.com/global-development-professionals-network/2014/aug/18/-sp-fewest-atms-interactive-map" class="wrap-border"><img src="/img/posts/2014-08-19-cartodbmedia/media1.png" alt=""></a></p></div>
 
-The Guardian published a map to show, in an interactive way, the most recent World Bank data and highlights the countries  with the fewest ATM's in the world. 
+The Guardian published a map to show, in an interactive way, the most recent World Bank data and highlight the countries  with the fewest ATM's in the world. 
 
 
 ### Twitter map: How #Ferguson Spread Across America
 
-<iframe width='100%' height='520' frameborder='0' src='http://srogers.cartodb.com/viz/4a5eb582-23ed-11e4-bd6b-0e230854a1cb/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe width='100%' height='420' frameborder='0' src='http://srogers.cartodb.com/viz/4a5eb582-23ed-11e4-bd6b-0e230854a1cb/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 Twitter compiled every geotagged tweet that mentioned Ferguson and made a interactive map with it. The map was published in lots of media around the US. 
 
