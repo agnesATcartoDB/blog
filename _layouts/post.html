@@ -75,10 +75,12 @@ js_asset: "post"
         <li>
           <div class="lst-post-relations-inner">
             <div class="relations-media h-pr">
-              {% if post.layout_color %}
-                <a href="{{ post.url }}" style="background-image: url({{ post.layout_color | prepend: site.baseurl }})" alt="{{ post.title }}" class="thumbnail with-layout-color"></a>
+              {% if post.thumbnail_image %}
+                <a href="{{ post.url }}" style="background-image: url({{ post.thumbnail_image }})" alt="{{ post.title }}" class="thumbnail with-layout-color"></a>
+              {% elsif post.layout_color %}
+                <a href="{{ post.url }}" style="background-image: url({{ post.layout_color }})" alt="{{ post.title }}" class="thumbnail with-layout-color"></a>
               {% else %}
-                <a href="{{ post.url }}" alt="{{ post.title }}" class="thumbnail"></a>
+                {{ post.content | thumbnail_url: post.url, post.title }}
               {% endif %}
             </div>
 
@@ -89,3 +91,4 @@ js_asset: "post"
     </ul>
   </div>
 </div>
+
