@@ -11,7 +11,7 @@ categories:
 
 If you are following [our repositories](https://github.com/CartoDB) or you are using Odyssey.js you would have discover that we have been using markdown a lot during the last few months. 
 
-Markdown allows you to write using an easy-to-read, easy-to-write plain text format, and then convert it to HTML to post online. Because markdown text files are simply plain-text, you can use almost any text editor to open them. 
+The Markdown language was created in 2004 by [John Gruber](http://en.wikipedia.org/wiki/John_Gruber) with substantial contributions from [Aaron Swartz](http://es.wikipedia.org/wiki/Aaron_Swartz) with the goal of allowing people “to write using an easy-to-read, easy-to-write plain text format, and optionally convert it to structurally validXHTML (or HTML). Because markdown text files are simply plain-text, you can use almost any text editor to open them. 
 
 <!--more-->
 
@@ -33,5 +33,8 @@ When converting to HTML, markdown translates quickly to perfectly-formed documen
 
 Definitely yes. We use markdown for almost everything. From writing content in our websites or creating internal documentation, to [telling stories with maps](http://cartodb.github.io/odyssey.js/) or creating to-do lists. By using it, the less technical people on the team can contribute directly to our repos or create content that is translated to something more visual later without worrying about breaking stuff.
 
-Take a look at the [official markdown syntax website](http://daringfireball.net/projects/markdown/syntax) to know more about it or don't hesitate on telling us how you use it on twitter.
+Althought you may have encountered markdown already if you are using github, stackexchange or iAwriter, here are a couple of links that might be interesting for you if you are just starting to learn markdown; The [official markdown syntax website](http://daringfireball.net/projects/markdown/syntax)  and [this course at Code Academy](http://www.codecademy.com/courses/web-intermediate-en-Bw3bg/0/1).
+
+Happy mapping!
+
 
