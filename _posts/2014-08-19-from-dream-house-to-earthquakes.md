@@ -45,4 +45,6 @@ NRK, the largest media organisation in Norway, published a map made by the devel
 
 This map also appeared in three main Icelandic media outlets: [www.mbl.is](http://www.mbl.is/frettir/innlent/2014/08/19/forritarar_reyna_vid_bardarbungu/), [www.visir.is](http://www.visir.is/skjalftarnir-vid-bardarbungu-a-tiu-sekundum/article/2014140818912), [www.ruv.is](http://www.ruv.is/frett/skjalftarnir-vid-bardarbungu-a-10-sekundum)
 
+We asked Garcia why he decided to use CartoDB instead of any other platform and he remarked "CartoDB's ability to create Torque-based temporal animations out of the box is quite amazing. Once I had the data imported,  I was able to focus on presenting the data in the clearest possible way without having to worry about the internals of representing the time series."
+
 We are pleased to see media using our platform. If you want to do the same, go to [CartoDB](http://cartodb.com/), sign up for a free account and start creating your own maps.
