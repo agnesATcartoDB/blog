@@ -15,26 +15,66 @@ module.exports = function(grunt) {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
         secretAccessKey: "<%= aws.secretAccessKey %>",
-        headers: {
-          "CacheControl": "max-age=630720000, public",
-          "Expires": new Date(Date.now() + 63072000000).toUTCString()
-        },
-        gzip: true,
-        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*"]
       },
       staging: {
         options: {
           bucket: '<%= aws.stagingBucket %>'
         },
         cwd: "<%= config.dist %>",
-        src: "**"
+        src: [
+          '*.{ico,png}',
+          'feed.*',
+          '**/*.html'
+        ]
+      },
+      stagingAssets: {
+        options: {
+          bucket: '<%= aws.stagingBucket %>',
+          headers: {
+            "CacheControl": "max-age=630720000, public",
+            "Expires": new Date(Date.now() + 63072000000).toUTCString()
+          },
+        },
+        gzip: true,
+        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*.{gif,jpeg,jpg,png}"],
+        cwd: "<%= config.dist %>"
+      },
+      stagingRobots: {
+        options: {
+          bucket: '<%= aws.stagingBucket %>'
+        },
+        src: "<%= config.dist %>/disallow-robots.txt",
+        dest: "robots.txt"
       },
       production: {
         options: {
           bucket: '<%= aws.productionBucket %>'
         },
         cwd: "<%= config.dist %>",
-        src: "**"
+        src: [
+          '*.{ico,png}',
+          'feed.*',
+          '**/*.html'
+        ]
+      },
+      productionAssets: {
+        options: {
+          bucket: '<%= aws.productionBucket %>',
+          headers: {
+            "CacheControl": "max-age=630720000, public",
+            "Expires": new Date(Date.now() + 63072000000).toUTCString()
+          },
+        },
+        gzip: true,
+        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*.{gif,jpeg,jpg,png}"],
+        cwd: "<%= config.dist %>"
+      },
+      productionRobots: {
+        options: {
+          bucket: '<%= aws.productionBucket %>'
+        },
+        src: "<%= config.dist %>/allow-robots.txt",
+        dest: "robots.txt"
       }
     },
     connect: {
@@ -64,11 +104,11 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: ['_lib/scss/*.scss'],
+        files: ['_scss/*.scss'],
         tasks: ['compass:server'],
       },
       js: {
-        files: ['_lib/js/{,*/}*.js'],
+        files: ['_js/{,*/}*.js'],
         tasks: ['copy:server'],
       },
       html: {
@@ -77,7 +117,7 @@ module.exports = function(grunt) {
           '{,*/}*.md',
           'img/**/*'
         ],
-        tasks: ['shell:server', 'compass:server', 'copy:server']
+        tasks: ['shell:server', 'concurrent:server']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -90,7 +130,7 @@ module.exports = function(grunt) {
           '{,*/}*.html',
           '{,*/}*.md',
           'img/**/*',
-          '_lib/scss/*.scss'
+          '_scss/*.scss'
         ]
       }
     },
@@ -138,9 +178,8 @@ module.exports = function(grunt) {
         src: [
           '<%= config.dist %>/js/**/*.js',
           '<%= config.dist %>/css/{,*/}*.css',
-          '<%= config.dist %>/img/**/*.*',
-          '<%= config.dist %>/fonts/{,*/}*.*',
-          '<%= config.dist %>/*.{ico,png}'
+          '<%= config.dist %>/img/**/*.{gif,jpeg,jpg,png}',
+          '<%= config.dist %>/fonts/{,*/}*.*'
         ]
       }
     },
@@ -148,7 +187,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           '<%= config.dist %>/css/main.css': [
-            '_lib/scss/{,*/}*.css',
+            '_scss/{,*/}*.css',
             '<%= config.app %>/css/{,*/}*.css'
           ]
         }
@@ -159,8 +198,7 @@ module.exports = function(grunt) {
         files: {
           '_site/js/main.js': ['.tmp/js/main.js'],
           '_site/js/vendor.js': ['.tmp/js/vendor.js'],
-          '_site/js/index.js': ['_lib/js/index.js'],
-          '_site/js/post.js': ['_lib/js/post.js']
+          '_site/js/post.js': ['_js/post.js']
         }
       },
     },
@@ -173,10 +211,11 @@ module.exports = function(grunt) {
             'bower_components/backbone/backbone.js'
           ],
           '.tmp/js/main.js': [
-            '_lib/js/app.js',
-            '_lib/js/index.js',
-            '_lib/js/ui/navbar.js',
-            '_lib/js/ui/tooltip.js'
+            'bower_components/cdbui/js/cdbui/cdbui.js',
+            'bower_components/cdbui/js/cdbui/cdbui.navbar.js',
+            'bower_components/cdbui/js/cdbui/cdbui.tooltip.js',
+            '_js/app.js',
+            '_js/index.js'
           ]
         }
       }
@@ -186,7 +225,7 @@ module.exports = function(grunt) {
         dest: '<%= config.dist %>'
       },
       html: '<%= config.dist %>/**/*.html',
-      css: '<%= config.app %>/css/{,*/}*.css'
+      css: '<%= config.dist %>/css/{,*/}*.css'
     },
     usemin: {
       options: {
@@ -205,7 +244,8 @@ module.exports = function(grunt) {
       server: {
         options: {
           config: 'config.rb',
-          cssDir: '<%= config.dist %>/css'
+          cssDir: '<%= config.dist %>/css',
+          fontsDir: 'bower_components/cdbui/fonts'
         }
       },
       dist: {
@@ -220,29 +260,25 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: '_lib/scss',
+          cwd: '_scss',
           dest: '<%= config.dist %>/css/',
           src: '{,*/}*.css'
         }, {
           expand: true,
           dot: true,
-          cwd: '_lib/js',
-          src: ['{,*/}*.*'],
+          cwd: '_js',
+          src: '{,*/}*.*',
           dest: '<%= config.dist %>/js/'
-        },
-        {
+        }, {
           src: 'bower_components/jquery/dist/jquery.js',
           dest: '<%= config.dist %>/js/vendor/jquery.js'
-        },
-        {
+        }, {
           src: 'bower_components/underscore/underscore.js',
           dest: '<%= config.dist %>/js/vendor/underscore.js'
-        },
-        {
+        }, {
           src: 'bower_components/backbone/backbone.js',
           dest: '<%= config.dist %>/js/vendor/backbone.js'
-        },
-        {
+        }, {
           src: 'bower_components/modernizr/modernizr.js',
           dest: '<%= config.dist %>/js/vendor/modernizr.js'
         }]
@@ -255,43 +291,45 @@ module.exports = function(grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
+            'feed.*',
             '**/*.html',
-            'fonts/{,*/}*.*',
             'img/**/*.{gif,jpeg,jpg,png}'
           ]
+        }, {
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/cdbui/fonts',
+          dest: '<%= config.dist %>/fonts/',
+          src: '{,*/}*.*',
+        }, {
+          src: 'bower_components/modernizr/modernizr.js',
+          dest: '<%= config.dist %>/js/vendor/modernizr.js'
         }]
       },
       styles: {
         expand: true,
         dot: true,
-        cwd: '_lib/scss',
+        cwd: '_scss',
         dest: '<%= config.app %>/css/',
         src: '{,*/}*.css'
       },
-      scripts: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '_lib/js',
-          src: ['{,*/}*.*'],
-          dest: '<%= config.app %>/js/'
-        },
-        {
-          src: 'bower_components/modernizr/modernizr.js',
-          dest: '<%= config.dist %>/js/vendor/modernizr.js'
-        }]
+      images: {
+        expand: true,
+        dot: true,
+        cwd: 'img',
+        src: '**/*.{gif,jpeg,jpg,png}',
+        dest: '<%= config.dist %>/img/'
       }
     },
     concurrent: {
       server: [
         'compass:server',
-        'copy:styles',
-        'copy:server'
+        'copy:server',
+        'copy:styles'
       ],
       dist: [
         'compass:dist',
-        'copy:styles',
-        'copy:scripts'
+        'copy:styles'
       ]
     },
     htmlmin: {
@@ -348,6 +386,7 @@ module.exports = function(grunt) {
     'copy:dist',
     'filerev',
     'usemin',
+    'copy:images'
     // 'htmlmin'
   ]);
 
@@ -361,17 +400,22 @@ module.exports = function(grunt) {
     'uglify',
     'copy:dist',
     'filerev',
-    'usemin'
+    'usemin',
+    'copy:images'
   ]);
 
   grunt.registerTask('deploy:staging', [
     'build',
-    's3:staging'
+    's3:staging',
+    's3:stagingAssets',
+    's3:stagingRobots'
   ]);
 
   grunt.registerTask('deploy:production', [
     'build',
-    's3:production'
+    's3:production',
+    's3:productionAssets',
+    's3:productionRobots'
   ]);
 
   grunt.registerTask('default', [
