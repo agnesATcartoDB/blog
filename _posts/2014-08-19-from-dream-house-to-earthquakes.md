@@ -39,7 +39,7 @@ Are you going to spend your holidays in Madrid? The spanish newspaper, El Mundo,
 
 ### Scandinavian media: Bárðarbunga volcano 
 
-NRK, the largest media organisation in Norway, published a map made by the developer [Aitor Garcia](http://aitor.is/me/) who used the Data from Iceland's Meteorological Institute to visualize the intense seismic activity (more than 1.400 earthquakes) that a volcano known as Bárðarbunga in Iceland has displayed in the last 48 hours.
+NRK, the largest media organisation in Norway, published a map made by the developer [Aitor Garcia](http://aitor.is/me/) who used the Data from Iceland's Meteorological Institute to visualize the intense seismic activity (more than 1.400 earthquakes) that a volcano known as Bárðarbunga in Iceland has displayed in the last 72 hours.
 
 <div class="wrap"><p><a href="http://nrk.no/verden/island-jordskjelv-varsler-utbrudd-1.11887277" class="wrap-border"><img src="/img/posts/2014-08-19-cartodbmedia/media2.png" alt=""></a></p></div>
 
