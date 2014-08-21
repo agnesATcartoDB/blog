@@ -43,7 +43,7 @@ Also, you can run the blog locally as if it was on production with `grunt serve:
 
 ### Excerpts
 
-Normally the excerpts of the posts take the first paragraph of the content (it can be an image), but you can override this by placing a `<!--more--!>` tag in the text. The description meta of the page comes from this excerpt, unless you specifically set `description:` in the front matter block.
+Normally the excerpts of the posts take the first paragraph of the content (it can be an image), but you can override this by placing a `<!--more--!>` tag in the text. The description meta of the page comes from this excerpt, unless you specifically set `description:` in the Front Matter.
 
 
 ### Adding images
