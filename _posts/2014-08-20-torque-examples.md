@@ -1,49 +1,63 @@
 ---
-title: 'From searching for your dream house to earthquakes, CartoDB is everywhere'
+title: 'The infinite possibilities of Torque: a list of examples'
 tags:
 - cartodb
-- media
+- torque
 categories:
-- 'Customer stories'
+- 'Customer Stories'
 ---
-Every single day we see a huge influx of beautiful maps created using CartoDB. The topics range from everything from the best places to live in the UK to seismic activity in the depths of Iceland. We decided to compile a list of some really cool maps done by huge media outlets in the last couple of days.
+
+Static maps can be boring at times. To spice things up a little, CartoDB has been offering the possibility to create animated Torque maps which bring the data to life in an efficient, fast, and styleable way. As the months have gone by, more and more people have started using this feature and created some amazing visualizations with it. 
 
 <!--more-->
 
-### The Telegraph: the best places to live in England and Wales
+All CartoDB users can easily create animated maps, just by going to the [Torque option](http://blog.cartodb.com/torque-is-live-try-it-on-your-cartodb-maps-today/) in our wizard (just like your point maps and choropleths). [Torque](https://github.com/CartoDB/torque) allows you to see the changes in big data over time! What can be more cool than that?
 
-<div class="wrap"><p><a href="http://www.telegraph.co.uk/finance/economics/11041812/Mapped-the-best-places-to-live-in-England-and-Wales.html" class="wrap-border"><img src="/img/posts/2014-08-19-cartodbmedia/media3.png" alt=""></a></p></div>
+You might have stumbled upon some great visualizations depicting Twitter activity during big events around the world. In this post, we would like to show you some examples of how our customers are using Torque:
 
-Well known British newspaper, The Telegraph, created a map which allows you to search for the best places to live in England and Wales using official data on average weekly incomes, crime rates, health, home ownership, and economic activity.
+### Fires in the Amazon 
 
+<div class="wrap"><p><a href="http://infoamazonia.org/projects/fire/" class="wrap-border"><img src="/img/posts/2014-08-21-torque-examples/firemap.png" alt=""></a></p></div>
 
-### The Guardian: Which countries has the fewest ATM'S?
+InfoAmazonia used two years of data from NASA satellites to create this map. InfoAmazonia provides timely news and reports of the endangered Amazon region. A network of organizations and journalists deliver updates from the nine countries of the forest.
 
-<div class="wrap"><p><a href="http://www.theguardian.com/global-development-professionals-network/2014/aug/18/-sp-fewest-atms-interactive-map" class="wrap-border"><img src="/img/posts/2014-08-19-cartodbmedia/media1.png" alt=""></a></p></div>
+### Seismic activity from a volcano in Iceland
 
-The Guardian published a map to show, in an interactive way, the most recent World Bank data and highlight the countries  with the fewest ATM's in the world. 
+<div class="wrap"><p><a href="https://iceland.cartodb.com/viz/765b8016-2708-11e4-b97f-0e230854a1cb/public_map" class="wrap-border"><img src="/img/posts/2014-08-19-cartodbmedia/media2.png" alt=""></a></p></div>
 
-
-### Twitter map: How #Ferguson Spread Across America
-
-<iframe width='100%' height='420' frameborder='0' src='http://srogers.cartodb.com/viz/4a5eb582-23ed-11e4-bd6b-0e230854a1cb/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-Twitter compiled every geotagged tweet that mentioned Ferguson and made a interactive map with it. The map was published in lots of media around the US. 
-
-### El Mundo: Plan your holidays in Madrid 
-
-<div class="wrap"><p><a href="http://www.elmundo.es/elmundo/2014/graficos/ago/s2/ocio_madrid.html" class="wrap-border"><img src="/img/posts/2014-08-19-cartodbmedia/media4.png" alt=""></a></p></div>
-
-Are you going to spend your holidays in Madrid? The spanish newspaper, El Mundo, used the CartoDB tool Odyssey.js to show the best places to go in Madrid during the summer break. 
-
-### Scandinavian media: Bárðarbunga volcano 
+This map allows you to view the seismic activity around the Bárðarbunga volcano in Iceland in chronological order. The map is being updated daily.
 
 
-NRK, the largest media organisation in Norway, published a map made by the developer [Aitor Garcia](http://aitor.is/me/) who used the Data from Iceland's Meteorological Institute to visualize the intense seismic activity (more than 1.400 earthquakes) that a volcano known as Bárðarbunga in Iceland has displayed in the last 48 hours.
+### The Long Island Railroad 
 
-<div class="wrap"><p><a href="http://nrk.no/verden/island-jordskjelv-varsler-utbrudd-1.11887277" class="wrap-border"><img src="/img/posts/2014-08-19-cartodbmedia/media2.png" alt=""></a></p></div>
+<div class="wrap"><p><a href="http://projects.jameswong.org/LIRRmap/index.html"><img src="/img/posts/2014-08-21-torque-examples/railmap.png" alt=""></a></p></div>
 
-We asked Garcia why he decided to use CartoDB instead of any other platform and he remarked: " CartoDB's ability to create Torque-based temporal animations out of the box is quite amazing. Once I had the data imported,  I was able to focus on presenting the data in the clearest possible way without having to worry about the internals of representing the time series."
+The Torque feature made it  possible to create a map displaying the schedule of the trains operating under the Long Island rail service. The maps show their regular weekday schedule. Every branch allows you to see the progression of scheduled trains. Click on the map to watch the map in detail and to know how this map was created.
 
-This map also appeared in three main Icelandic media outlets: [www.mbl.is](http://www.mbl.is/frettir/innlent/2014/08/19/forritarar_reyna_vid_bardarbungu/), [www.visir.is](http://www.visir.is/skjalftarnir-vid-bardarbungu-a-tiu-sekundum/article/2014140818912), [www.ruv.is](http://www.ruv.is/frett/skjalftarnir-vid-bardarbungu-a-10-sekundum)
-We are pleased to see media using our platform. If you want to do the same, go to [CartoDB](http://cartodb.com/), sign up for a free account and start creating your own maps. 
+### The Ellis act 
+
+<div class="wrap"><p><a href="http://www.antievictionmappingproject.net/ellis.html"><img src="/img/posts/2014-08-21-torque-examples/sanfrancisco.png" alt=""></a></p></div>
+
+
+The map show the number of San Francisco families forced out of their homes, between 1997 and 2014, because of the state law known as The Ellis Act. This visualization was powered not only by CartoDB but  D3 and Leaflet were also used in the developed of the map. 
+
+
+### Global Terrorism in 2013 
+
+<div class="wrap"><p><a href="http://www.antievictionmappingproject.net/ellis.html"><img src="/img/posts/2014-08-21-torque-examples/sanfrancisco.png" alt=""></a></p></div>
+
+This is an [Odyssey.js](http://cartodb.github.io/odyssey.js/) map of terrorist events which occurred around the world in 2013 created by the [The National Consortium for the Study of Terrorism and Responses to Terrorism](http://www.start.umd.edu/gtd/). In this interactive story, events such as the Boston Marathon Bombings and the BP attack in Algeria are highlighted. 
+
+
+### The Navy of WWI
+
+<div class="wrap"><p><a href="http://cartodb.github.io/oldweather_wwi/"><img src="/img/posts/2014-08-21-torque-examples/thenavy.png" alt=""></a></p></div>
+
+
+This visualization show World War I Royal Navy locations transcribed by the citizen scientists of [Old Weather](http://blog.oldweather.org/2012/07/23/one-million-six-hundred-thousand-new-observations/). It is interesting to see how the naval operations increased when the United States entered the war. 
+
+
+If you want to know more about Torque, go to the [website](https://github.com/CartoDB/torque). Also hop onto [CartoDB](http://cartodb.com/), sign up for an account and start to explore the infinite possibilities that we offer to create visualizations.  
+
+
+
