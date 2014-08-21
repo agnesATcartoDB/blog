@@ -44,7 +44,7 @@ The map show the number of San Francisco families forced out of their homes, bet
 
 ### Global Terrorism in 2013 
 
-<div class="wrap"><p><a href="http://www.antievictionmappingproject.net/ellis.html"><img src="/img/posts/2014-08-21-torque-examples/sanfrancisco.png" alt=""></a></p></div>
+<div class="wrap"><p><a href="http://bl.ocks.org/anonymous/raw/ca61b9158adc0be885cb/"><img src="/img/posts/2014-08-21-torque-examples/globalterrorism.png" alt=""></a></p></div>
 
 This is an [Odyssey.js](http://cartodb.github.io/odyssey.js/) map of terrorist events which occurred around the world in 2013 created by the [The National Consortium for the Study of Terrorism and Responses to Terrorism](http://www.start.umd.edu/gtd/). In this interactive story, events such as the Boston Marathon Bombings and the BP attack in Algeria are highlighted. 
 
