@@ -65,7 +65,7 @@ Images can be styled so they are 940px width and have a border. Just wrap it bet
 
 #### Featured images
 
-Add `layout_color:` in the front matter block.
+Add `layout_color:` in the Front Matter.
 
 ```
 layout_color: '/img/posts/2014-07-15-enjoy-the-best-spanish-soccer-in-san-francisco/atleti-tickets.jpg'
@@ -96,7 +96,7 @@ gem install rb-gsl
 
 #### Related posts thumbnails
 
-Thumbnails are auto generated with the first image in the content of each post. They can be overriden by placing `thumbnail_image` in the Front Matter. We use [Jekyll Thumbnail Filter](https://github.com/matallo/jekyll-thumbnail-filter/) for this.
+Thumbnails are auto generated with the first image in the content of each post. They can be overriden by placing `thumbnail_image:` in the Front Matter. We use [Jekyll Thumbnail Filter](https://github.com/matallo/jekyll-thumbnail-filter/) for this.
 
 
 ## Deploy
