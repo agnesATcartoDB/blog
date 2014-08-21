@@ -2,9 +2,9 @@
 title: 'The infinite possibilities of Torque: a list of examples'
 tags:
 - cartodb
-- torque
+- torque 
 categories:
-- 'Customer Stories'
+- 'Customer stories'
 ---
 
 Static maps can be boring at times. To spice things up a little, CartoDB has been offering the possibility to create animated Torque maps which bring the data to life in an efficient, fast, and styleable way. As the months have gone by, more and more people have started using this feature and created some amazing visualizations with it. 
