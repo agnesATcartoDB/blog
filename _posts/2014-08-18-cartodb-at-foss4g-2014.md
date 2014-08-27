@@ -14,11 +14,13 @@ Soon, CartoDB will join the largest open-source geospatial conference, [FOSS4G](
 
 **How to tell stories and engage an audience with maps** (Wednesday, Sep 10th - 10:30 - 10:55), by [Andrew Hill](https://andrew.cartodb.com/)
 
+**Empowering people, popularizing open-source, and building a business** (Wednesday, Sep 10th, 15:30 - 15:55) by [Javier de la Torre](https://jatorre-cloud.cartodb.com/) and [Andrew Hill](https://andrew.cartodb.com/)
+
+
 **Dynamic mapping on the web: building a scalable service for thousands of companies** (Friday, Sep 12th, 13:00 - 13:25) by [Javier Santana](https://javi.cartodb.com/) and [Alejandro Martinez](https://zenitram.cartodb.com/)
 
 **The unrelenting progress of design in open-source** (Friday, Sep 12h, 14:00 - 14:25) by [Sergio Álvarez Leiva](https://saleiva.cartodb.com/)
 
-**Empowering people, popularizing open-source, and building a business** (Friday, Sep 12th, 15:30 - 15:55) by [Javier de la Torre](https://jatorre-cloud.cartodb.com/) and [Andrew Hill](https://andrew.cartodb.com/)
 
 
 We'll also be giving a couple of workshops: [Creating Interactive Online Maps with CartoDB](https://2014.foss4g.org/schedule/workshops/#wshop-content-577) (Monday morning), and [Bringing together SQL, CartoCSS and Javascript to tell stories with data using CartoDB](https://2014.foss4g.org/schedule/workshops/#wshop-content-597) (Tuesday morning)
