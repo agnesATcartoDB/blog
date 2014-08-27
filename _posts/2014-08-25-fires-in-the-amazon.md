@@ -1,5 +1,5 @@
 ---
-title: 'Two Years of Fires in the Amazon Rainforest'
+title: 'Map of the Week: Two Years of Fires in the Amazon Rainforest'
 tags:
 - cartodb
 - Torque
@@ -12,6 +12,8 @@ categories:
 We welcome [Laura Kurtzberg](https://twitter.com/laurakurtzberg), Data Intern at ecoLab, to our Map of the Week series. Kurtzberg work on the InfoAmazonia project along with other online undertakings. She cares about using Internet technology for humanitarian and environmental causes. 
 
 <!--more-->
+
+<hr> 
 
 [InfoAmazonia](http://infoamazonia.org) is a news project that combines data, maps, journalism, and citizen reports to improve the public's perception of issues in the Amazon region. Data is updated frequently and is freely available for download.
 
