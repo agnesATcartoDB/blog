@@ -11,6 +11,8 @@ categories:
 
 We welcome [Laura Kurtzberg](https://twitter.com/laurakurtzberg), Data Intern at ecoLab, to our Map of the Week series. Kurtzberg work on the InfoAmazonia project along with other online undertakings. She cares about using Internet technology for humanitarian and environmental causes. 
 
+<!--more-->
+
 [InfoAmazonia](http://infoamazonia.org) is a news project that combines data, maps, journalism, and citizen reports to improve the public's perception of issues in the Amazon region. Data is updated frequently and is freely available for download.
 
 Laura Kurtzberg tells us how InfoAmazonia has created a map that represents two years of fires in the Amazon rainforest.  
@@ -39,7 +41,7 @@ I wanted the data visualization to mimic the movement of a fire as it grows and 
 ### Final Result
 Here you can see a screenshot of our [final result](http://infoamazonia.org/projects/fire) on InfoAmazonia:
 
-<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-08-25-fires-in-the-amazon/firesintheamazon3.png" alt=""></p></div>
+<div class="wrap"><p><a href="http://infoamazonia.org/projects/fire/"><img src="//img/posts/2014-08-25-fires-in-the-amazon/firesintheamazon3.png" alt=""></a></p></div>
 
 
 ### Thanks
