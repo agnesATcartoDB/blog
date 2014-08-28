@@ -8,7 +8,7 @@ categories:
 - 'How-to guides'
 ---
 
-<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-07-30-cartodb-for-developers/developers.jpg" alt=""></p></div>
+<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-07-30-cartodb-for-developers/developers.jpg" alt="" /></p></div>
 
 On the 24th of July, our senior scientist [Andrew Hill](https://twitter.com/andrewxhill) hosted a webinar to teach how you can use [CartoDB](http://cartodb.com/) to develop geospatial applications. 
 

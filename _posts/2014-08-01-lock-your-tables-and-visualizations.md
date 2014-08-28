@@ -15,7 +15,7 @@ Today we are launching a new way to prevent undesired changes to your published 
 
 <!--more-->
 
-<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-08-01-lock-your-tables-and-visualizations/locked-tables.png" alt=""></p></div>
+<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-08-01-lock-your-tables-and-visualizations/locked-tables.png" alt="" /></p></div>
 
 To lock a table or a visualization, just go to your dashboard, put the cursor over the desired item and click on the small **L** icon. You can lock and unlock any item as many times as you would like.
 

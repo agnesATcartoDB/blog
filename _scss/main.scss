@@ -88,8 +88,20 @@
 
   p,
   ul,
-  ol {
+  ol,
+  iframe {
     margin-bottom: 20px;
+
+    + .wrap {
+      .wrap-border {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  p,
+  ul,
+  ol {
     font: 18px/28px 'Proxima Nova Rg';
     color: #333;
   }
@@ -141,10 +153,6 @@
   .decoration {
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px; 
-  }
-
-  iframe {
-    margin-bottom: 20px;
   }
 
   code {
@@ -226,22 +234,47 @@
   margin-right: -150px;
   text-align: center;
 
+  &:first-child {
+    .wrap-border {
+      margin-top: 0;
+    }
+  }
+
   p {
     display: inline-block;
+    margin-bottom: 0;
   }
-}
 
-.wrap-border {
-  &:after{
-    content: "";
-    position: absolute;
-    top: 20px; // same than img
-    left: 0;
-    bottom: 19px;
-    z-index: 11;
-    width: 100%;
-    @include box-shadow(0 0 0 1px rgba(#000, .2) inset);
+  + h2,
+  + h3,
+  + .wrap .wrap-border {
+    margin-top: 0;
+  }
+
+  .wrap-border {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0;
     @include border-radius(4px);
+
+    img,
+    iframe {
+      display: block;
+      margin: 0;
+    }
+
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 11;
+      width: 100%;
+      @include box-shadow(0 0 0 1px rgba(#000, .2) inset);
+      @include border-radius(4px);
+    }
   }
 }
 

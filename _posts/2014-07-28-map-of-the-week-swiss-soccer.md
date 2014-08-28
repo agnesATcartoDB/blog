@@ -8,7 +8,7 @@ categories:
 - 'Map of the Week'
 ---
 
-<div class="wrap"><p><a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/" class="wrap-border"><img src="http://i.imgur.com/EXLJ188.png" alt=""></a></p></div>
+<div class="wrap"><p><a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/" class="wrap-border"><img src="http://i.imgur.com/EXLJ188.png" alt="" /></a></p></div>
 
 We welcome [Timo Grossenbacher](https://twitter.com/wnstns) to our Map of The Week. He’s currently working as Interactive News Developer at the Swiss daily newspaper [Tages-Anzeiger](http://www.tagesanzeiger.ch/), based in Zurich.
 
@@ -20,7 +20,7 @@ Tages-Anzeiger published a couple of weeks ago their newest data driven journali
 
 This blog post summarizes the kind of data utilized by the developers, how they made use of the CartoDB Editor to style the map and how they built a full-blown Javascript application on top of the [CartoDB.js API](http://docs.cartodb.com/cartodb-platform/cartodb-js.html). 
 
-<hr>
+<hr />
 
 ### Data collection and pre-processing
 
@@ -108,7 +108,7 @@ We classified this variable into five classes using the CartoDB editor's quantil
 
 For the second mode, I also used the editor's ability to calculate quantiles of a variable, but only imported the generated CSS into the code of our application. In fact, our frontend does not actually switch between layers (of the CartoDB visualization) but updates the CSS as soon as somebody chooses a club.
 
-<div class="wrap"><p><a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/" class="wrap-border"><img src="http://i.imgur.com/Cpk2rIE.png" alt=""></a></p></div>
+<div class="wrap"><p><a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/" class="wrap-border"><img src="http://i.imgur.com/Cpk2rIE.png" alt="" /></a></p></div>
 
 ### Building the application
 
@@ -175,7 +175,7 @@ As you can see, in line 39, the original CSS (the one that is used when all club
 
 From line 24 to line 36 I also defined custom actions to be taken whenever the user hovers over a municipality or clicks on it. Based on whether he or she uses a mobile device, different actions are taken -mobile detection and other responsiveness goodness are provided by [Bootstrap](http://getbootstrap.com)-. In order to filter the data to be displayed upon these interactions, I give the respective functions the CartoDB-ID of the element that was interacted with. 
 
-<div class="wrap"><p><a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/" class="wrap-border"><img src="http://i.imgur.com/oaCz1rV.png" alt=""></a></p></div>
+<div class="wrap"><p><a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/" class="wrap-border"><img src="http://i.imgur.com/oaCz1rV.png" alt="" /></a></p></div>
 
 In line 42, by the way, I set a custom Google Map style which is very light and does hardly interfere with the different transparency values of the CartoDB layer.
 
@@ -267,6 +267,6 @@ Which is just the CSS copied from the editor. This might not be the most maintai
 
 In this project, CartoDB was a very helpful foundation for our application, not only in terms of its API but also because we could easily style the municipality polygons in the editor. This helped us in deciding what colors to use for the clubs, and in generating the opacity classes with CartoDB's overlay wizards.
 
-<hr>
+<hr />
 
 Check our other [Maps of the Week](http://blog.cartodb.com/tagged/map-of-the-week), and create your free [CartoDB.com](http://cartodb.com/) account to start building your own map-based projects.

@@ -8,7 +8,7 @@ categories:
 - 'Map of the Week'
 ---
 
-<div class="wrap"><p><a href="http://jeffjenkins.cartodb.com/viz/bc7b4ea6-48d7-11e3-8446-172a249aaded/embed_map?title=true&description=true&search=false&shareable=true&cartodb_logo=true&layer_selector=true&legends=true&scrollwheel=true&sublayer_options=1%7C1%7C1&sql=&sw_lat=40.721859850258966&sw_lon=-74.05128479003906&ne_lat=40.780963881442055&ne_lon=-73.89198303222656" class="wrap-border"><img src="/img/posts/2014-08-01-map-of-the-week-bike/bikelane.png" alt=""></a></p></div>
+<div class="wrap"><p><a href="http://jeffjenkins.cartodb.com/viz/bc7b4ea6-48d7-11e3-8446-172a249aaded/embed_map?title=true&description=true&search=false&shareable=true&cartodb_logo=true&layer_selector=true&legends=true&scrollwheel=true&sublayer_options=1%7C1%7C1&sql=&sw_lat=40.721859850258966&sw_lon=-74.05128479003906&ne_lat=40.780963881442055&ne_lon=-73.89198303222656" class="wrap-border"><img src="/img/posts/2014-08-01-map-of-the-week-bike/bikelane.png" alt="" /></a></p></div>
 
 We welcome [Jeff Jenkins](https://twitter.com/jeffwjenkins) to our Map of the Week series. Jenkins is a cyclist, board gamer, and software engineer living in New York City. 
 
@@ -30,7 +30,7 @@ It turned out that the data for trucks was in kml format and didn't have all of 
 
 Since CartoDB has limits on how much data you can store, it's a good idea to trim anything you don't need. It's so easy to drag the raw data back in that you aren't really losing anything. My map only dealt with Manhattan, so I used the boro column in truck data to delete anything I didn't care about. Here is a before and after:
 
-<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-08-01-map-of-the-week-bike/imagebikelanes.png" alt=""></p></div>
+<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-08-01-map-of-the-week-bike/imagebikelanes.png" alt="" /></p></div>
 
 The data size went from 14MB to 2MB, which leaves lots of extra space in my plan for additional visualizations. I didn't need to do it, but I could have also deleted some of the many columns which I wasn't using to further reduce the data size. I also decided to leave all of Manhattan even though most of it wasn't needed since I thought the context would be useful. I also imported the NYC bike lane data, but it was quite small so I didn't do any trimming.
 
@@ -48,7 +48,7 @@ After a while of failing to make both visible I checked a [CartoCSS](https://www
 }
 {% endhighlight %}
 
-<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-08-01-map-of-the-week-bike/imagebikelanes2.png" alt=""></p></div>
+<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-08-01-map-of-the-week-bike/imagebikelanes2.png" alt="" /></p></div>
 
 I also needed lines on the map denoting the southbound bike lanes. I added a manual layer to accomplish this. The button can be hard to see, but it's in the menu on the right side.
 

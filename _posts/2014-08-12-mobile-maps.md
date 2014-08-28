@@ -6,7 +6,6 @@ categories:
 layout_color: 'http://i.imgur.com/Ra1Wza1.jpg'
 ---
 
-
 Today, we consume information primarily through mobile devices. From the start, CartoDB has supported visualizations on-the-go. We believe that form and function make a good pair, which is why our maps are designed to live with the technology that supports their creators. Our conviction was a hard-won technical challenge. 
 
 <!-- <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/pGJSi9r.jpg" alt=""></p></div> -->
@@ -15,7 +14,7 @@ Scaling visualizations for multiple platforms is difficult, as what displays on 
 
 Streamlining map views is not as simple. To have it both ways, you would need to build two versions of a visualization that were controlled from an external device. That is, until now.
 
-<div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/HlHfWXs.gif" alt=""></p></div>
+<div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/HlHfWXs.gif" alt="" /></p></div>
 
 ### Welcome to the new CartoDB Editor, designed for the cartographer of the digital age
 
@@ -25,10 +24,9 @@ So, we’ve solved sizing, but what about dimensionality? With our new Canvas Se
 
 
 <div class="wrap">
-<iframe width='100%' height='620' frameborder='0' src='http://team.cartodb.com/viz/4101e074-222e-11e4-b327-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  <div class="wrap-border">
+    <iframe width='100%' height='620' frameborder='0' src='http://team.cartodb.com/viz/4101e074-222e-11e4-b327-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  </div>
 </div>
 
 With this new feature you can create truly responsive visualizations, controlling how your visualization appears for desktop and mobile views. And from here, there are lots of possibilities in how you deliver your visualizations to tell stories with your data. Start using our new editor now, and stay tuned for more news in the coming weeks.
-
-
-
