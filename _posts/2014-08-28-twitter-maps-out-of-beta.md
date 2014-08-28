@@ -1,5 +1,5 @@
 ---
-title: 'Twitter Maps out of beta'
+title: 'Twitter Maps is out of beta'
 tags:
 - cartodb
 - twitter
@@ -8,35 +8,35 @@ categories:
 layout_color: http://i.imgur.com/58Zwsgg.png
 ---
 
-Earlier last month, we released a beta version of [Twitter Maps](http://cartodb.com/solutions/twitter-maps), which gives you the ability to map tweets directly from the CartoDB Editor. Today, we are excited to announce the next phase of our Twitter Maps service: general availability for our Enterprise customers.
+Earlier last month we released a beta version of [Twitter Maps](http://cartodb.com/solutions/twitter-maps), which gives you the ability to map tweets directly from the CartoDB Editor. Today we are excited to announce the next phase of our Twitter Maps service: general availability for our Enterprise plan customers.
 
-With this new feature you can search for the Twitter activity you want to visualize and analyze directly from the CartoDB Editor, select the period of tweets you want, and start mapping—all in a matter of minutes. We are the first geospatial analysis and visualization platform that lets you directly access Twitter data, extract it, and have it instantly available for visualization and analysis; enabling you to build complex visualizations with millions of points—something no other tool is ready to.
+With this new feature you can search for the Twitter activity you'd like to visualize, analyze it directly from the CartoDB Editor, select the period of tweets you want, and start mapping—all in a matter of minutes. We are the first geospatial analysis and visualization platform that lets you directly access Twitter data, extract it, and have it instantly available for mapping and analysis, enabling you to build complex visualizations with millions of points—something no other tool is ready to.
 
 <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/d3GSSYQ.gif" alt=""></p></div>
 
-As Twitter has become a global and real time mirror of what is happening in the world in a given moment, being able to access tweet information opens a whole world of possibilities: from monitoring mentions about your brand or event (think of it as real time market research), to doing demographic analysis, to using Twitter activity as research material... Usages of this feature are endless. Combine that with analysis and visualization capabilities of the CartoDB Editor and you can do super advanced analysis of what is happening around you.
+As Twitter has become a global and real-time mirror of what is happening in the world at any given moment, being able to access tweet information opens up a world of possibilities: from monitoring mentions of your brand or event (think of it as real-time market research) to performing demographic analysis to using Twitter activity as research material, uses of this feature are endless. Combine all this with the analysis and visualization capabilities of the CartoDB Editor and you can execute super advanced analyses of what is happening around you.
 
 
-### <span id="comparative">Why use CartoDB to consume tweets instead of the Twitter API or other tools</span>
+### <span id="comparative">Why you should use CartoDB to digest info from tweets</span>
 
-We have designed an integration in a way that really set us apart from any other alternative in the market, enabling you to do things that you can't do with any other tool.
+We have designed an integration in a way that really sets us apart from other alternatives on the market, enabling you to do things you can't do with any other tool.
 
-- You can download millions of tweets from the last 30 days, versus the limited amount of tweets and few days limit of the official Twitter API; if you want to map an event that ocurred during last week, you could not do that just with the Twitter API, but it would be plain easy and fast through the CartoDB Editor using the new Twitter Data Source.
+- The official Twitter API gives you access to few days' worth of tweets, but with CartoDB's Twitter Data Source service you can download millions of tweets from the last 30 days. If you want to map an event that occurred last week you cannot do this using just the Twitter API—but mapping this same event is not only possible, but easy and fast with the CartoDB Editor.
 
-- With the CartoDB Twitter Data Source, you are guaranteed that you will get all geotagged tweets related to your search, not just a fraction (with Twitter API you don't know for sure)
+- With the CartoDB Twitter Data Source you are guaranteed to get all geotagged tweets related to your search, not just the fraction you get using the Twitter API.
 
-- Retrieving the tweets for your search is a fast process, and you can instantly visualize all of them, be it thousands or millions of tweets. There is no other visualization tool that will let you do this with CartoDB's efficiency and speed (other service's Term of Services will limit the ways in which you can use the data)
+- Retrieving the tweets for your search is a fast and painless process, and you can instantly visualize all of them, whether you're working with thousands or millions of tweets. No other existing visualization tool lets you do this with CartoDB's efficiency and speed. 
 
-- Once you have obtained your tweets, you can use all the tools the CartoDB Editor provides to perform Geospatial analysis of the tweets, all inside the same interface, without the need of moving data around (other tools will limit the type of analysis and visualizations you can perform on the data). 
+- Once you have pulled your tweets into the CartoDB Editor you can use any of the platform's tools to perform Geospatial analysis of them, all inside the same interface and without the need to move data around. Other tools limit the types of analysis and visualizations you can perform on data, while CartoDB does not. 
 
 
-The ability to process great amounts of data, perform analysis, filter data, and style maps easily and beautifuly are some of the reasons why Twitter themselves have choosen CartoDB as their mapping platform for the coverage of recent global events [such](https://twitter.com/TwitterData/timelines/479032120136851458) as this [summers'](http://cartodb.com/v/worldcup/brazil-croatia/#/2/24.5/-7.0/0) [World Cup](https://blog.twitter.com/2014/seven-worldcup-data-takeaways-so-far).
+The ability to process and filter voluminous amounts of data, perform analysis, and style maps easily and beautifully are some of the reasons why Twitter itself has choosen CartoDB as its mapping platform for the coverage of recent global events [such](https://twitter.com/TwitterData/timelines/479032120136851458) as this [summer's](http://cartodb.com/v/worldcup/brazil-croatia/#/2/24.5/-7.0/0) [World Cup](https://blog.twitter.com/2014/seven-worldcup-data-takeaways-so-far).
 
-With the [Twitter Maps](http://cartodb.com/solutions/twitter-maps) CartoDB service you will be able to create maps such as those Twitter itself [has](http://cartodb.com/v/worldcup/brazil-croatia/#/2/24.5/-7.0/0) [been](https://cartodb.com/gallery/twitter-sunrise/) [creating](https://cartodb.com/gallery/twitter-india-elections/) in the last months, [which have gotten a great deal of media coverage](http://blog.cartodb.com/cartodb-twitter-maps-in-today-yahoo-espn-time-cnbc/). 
+With the [Twitter Maps](http://cartodb.com/solutions/twitter-maps) CartoDB service you will be able to create maps such as those Twitter itself [has](http://cartodb.com/v/worldcup/brazil-croatia/#/2/24.5/-7.0/0) [been](https://cartodb.com/gallery/twitter-sunrise/) [making](https://cartodb.com/gallery/twitter-india-elections/) in the last few months. Those maps that [have generated a great deal of media coverage](http://blog.cartodb.com/cartodb-twitter-maps-in-today-yahoo-espn-time-cnbc/) speak to the accessibility and impact of CartoDB.  
 
-Today, we are excited to announce the next phase of our Twitter Maps service: general availability. We’ve said goodbye to beta and hello to CartoDB Enterprise customers. Get your team started on creating interactive maps from Twitter activity—search for any term, get relevant data directly from Twitter, and map it. 
+Today we are excited to announce the next phase of our Twitter Maps service: general availability. We're saying goodbye to beta and hello to CartoDB Enterprise customers. Give your team the opportunity to make interactive maps based on Twitter activity—search for any term, get relevant data directly from Twitter, and map it—by signing up for an Enterprise plan today. 
 
-Contact sales@cartodb.com to get started with Twitter Maps, and take a look at more examples of tweets mapped with CartoDB:
+Contact sales@cartodb.com to get started with Twitter Maps, and take a look at more examples of tweets mapped using CartoDB:
 
 [#indyref – the Scottish independence debate on Twitter](http://www.portland-communications.com/2014/08/indyref-scottish-independence-debate-on-twitter/#sthash.EgN4drSp.dpuf) by [@PortlandComms](http://www.twitter.com/PortlandComms)
 
