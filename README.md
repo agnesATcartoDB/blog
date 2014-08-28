@@ -34,6 +34,17 @@ Also, you can run the blog locally as if it was on production with `grunt serve:
 
 ## Write
 
+To publish a post in the blog, please follow this workflow: 
+
+- Have a local copy of the repo 
+- Create a new branch for your new post (`git checkout -b title-of-my-post`)
+- Commit your changes (`git commit -am 'New post: Title of my post'`)
+- Push to the branch (`git push origin title-of-my-post`)
+- Create a new Pull Request
+
+The Pull Request will be reviewed and commented on, and if everything is ok, merged into master, which will deploy the changes to production.
+
+
 ### Working with drafts
 
 - Save your draft to the _drafts folder
