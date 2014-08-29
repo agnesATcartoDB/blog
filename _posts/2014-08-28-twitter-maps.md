@@ -41,15 +41,11 @@ Contact sales@cartodb.com to get started with Twitter Maps, and take a look at m
 [#indyref – the Scottish independence debate on Twitter](http://www.portland-communications.com/2014/08/indyref-scottish-independence-debate-on-twitter/#sthash.EgN4drSp.dpuf) by [@PortlandComms](http://www.twitter.com/PortlandComms)
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width='940' height='480' frameborder='0' src='http://portland.cartodb.com/viz/328dc588-24ab-11e4-824d-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  </div>
+  <iframe width='940' height='480' frameborder='0' src='http://portland.cartodb.com/viz/328dc588-24ab-11e4-824d-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 </div>
 
 An [Odyssey.js](http://blog.cartodb.com/odyssey-js-new-open-source-tool-to-weave-interactive/) story by [Aljazeera's The Stream]():
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width='940' height='630' frameborder='0' src='http://stream.aljazeera.com/projects/socialmediaconversation/' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  </div>
+  <iframe width='940' height='630' frameborder='0' src='http://stream.aljazeera.com/projects/socialmediaconversation/' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 </div>

@@ -28,9 +28,7 @@ The Guardian published a map to show, in an interactive way, the most recent Wor
 ### Twitter map: How #Ferguson Spread Across America
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width='100%' height='520' frameborder='0' src='http://srogers.cartodb.com/viz/4a5eb582-23ed-11e4-bd6b-0e230854a1cb/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  </div>
+  <iframe width='100%' height='520' frameborder='0' src='http://srogers.cartodb.com/viz/4a5eb582-23ed-11e4-bd6b-0e230854a1cb/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 </div>
 
 Twitter compiled every geotagged tweet that mentioned Ferguson and made a interactive map with it. The map was published in lots of media around the US. 

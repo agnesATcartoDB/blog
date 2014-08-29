@@ -30,9 +30,7 @@ Being a bike share, Citi Bike allows their riders to pick up and drop off a bike
 Bike #17310 is the most widely used bike among all the bikes in the bike share, with over 1,600 rides as of May. The visualization below shows all the rides taken with the bike: red indicating trips by a rider and blue indicating trips done by a Citi Bike truck. In general, it looks like the bike is moved around without any extra help in the western part of Manhattan, but frequently needs to be moved by truck in the East Village and Brooklyn. 
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width='100%' height='520' frameborder='0' src='http://team.cartodb.com/viz/205862b2-1e55-11e4-a972-0e73339ffa50/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  </div>
+  <iframe width='100%' height='520' frameborder='0' src='http://team.cartodb.com/viz/205862b2-1e55-11e4-a972-0e73339ffa50/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 </div>
 
 While the original data only records when the bike was riden by a user, you can use SQL to identify gaps in the network of Bike #17310's movement: 
@@ -99,9 +97,7 @@ The map helps demonstrate the general trends of where bikes are flowing from one
 Not surprisingly we can see that the largest flows are the morning and evening weekday commute from Times Square, Penn Station, and Grand Central Station. What is surprising is Bryant Park, a major hub of work commuters and very close to Grand Central and Port Authority, generated bike flow in the opposite directions. We wonder if there could be simple solutions for this cluster.
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width='100%' height='700' frameborder='0' src='http://team.cartodb.com/viz/71381978-1d8f-11e4-82da-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  </div>
+  <iframe width='100%' height='700' frameborder='0' src='http://team.cartodb.com/viz/71381978-1d8f-11e4-82da-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 </div>
 
 ### Where's The Action?
@@ -139,9 +135,7 @@ where starttime between '2014-01-01 07:30:00' and '2014-01-01 09:30:00'
 ...highlighting a surprisingly large number of blinking lights in many of the stations. One notable example is the stations around Grand Central Station, around 42nd and Park Avenue. If this really is trucks ferrying bikes, wow! There, you can see alternating red and blue lights indicating constant ferring of bikes in and out of a single station by vans or other non-riders. It makes us want to dig deeper to find out which of these are vans and which are oddities in the data. 
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width='100%' height='700' frameborder='0' src='http://team.cartodb.com/viz/003bb518-1d99-11e4-9877-0edbca4b5057/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  </div>
+  <iframe width='100%' height='700' frameborder='0' src='http://team.cartodb.com/viz/003bb518-1d99-11e4-9877-0edbca4b5057/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 </div>
 
 This is just a simple example of how you can use CartoDB to turn data into insights. If you're interested in checking it out [create a free account](http://www.cartodb.com) and start mapping your own data today.

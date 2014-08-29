@@ -21,9 +21,7 @@ Welcome [Miles Grimshaw](@milesgrimshaw) to our Map of the Week series. Miles ha
 <p>Citibike is a fine example. Over the past 10 months I made 268 trips on Citibike, and like all Citibike trips, each of these  was meticulously recorded and stored away online by the Citi service. Unfortunately Citibike does not currently have an API, nor any export functionality, making it difficult for anyone (NSA or otherwise) to explore their data.</p>
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width="100%" height="520" frameborder="0" src="http://team.cartodb.com/viz/2b2a9d4c-0c8d-11e4-80e6-0e73339ffa50/embed_map?title=false&amp;description=false&amp;search=false&amp;shareable=true&amp;cartodb_logo=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1|1&amp;sql=&amp;sw_lat=40.68089838511525&amp;sw_lon=-74.08493041992186&amp;ne_lat=40.773261878622634&amp;ne_lon=-73.86520385742188" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
-  </div>
+  <iframe width="100%" height="520" frameborder="0" src="http://team.cartodb.com/viz/2b2a9d4c-0c8d-11e4-80e6-0e73339ffa50/embed_map?title=false&amp;description=false&amp;search=false&amp;shareable=true&amp;cartodb_logo=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1|1&amp;sql=&amp;sw_lat=40.68089838511525&amp;sw_lon=-74.08493041992186&amp;ne_lat=40.773261878622634&amp;ne_lon=-73.86520385742188" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
 </div>
 
 <p>Enter Kimono Labs, to the rescue!</p>
@@ -37,23 +35,17 @@ Welcome [Miles Grimshaw](@milesgrimshaw) to our Map of the Week series. Miles ha
 <h2 id="animation-of-my-roommate-bay-grosshttpbaygrosscom-trips">Animation of My Roommate <a href="http://baygross.com/">Bay Gross’</a> Trips</h2>
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width="100%" height="520" frameborder="0" src="http://team.cartodb.com/viz/657d3f6c-1ce7-11e4-b595-0e230854a1cb/embed_map?title=false&amp;description=false&amp;search=false&amp;shareable=true&amp;cartodb_logo=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1|1&amp;sql=&amp;sw_lat=40.68089838511525&amp;sw_lon=-74.08493041992186&amp;ne_lat=40.773261878622634&amp;ne_lon=-73.86520385742188" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
-  </div>
+  <iframe width="100%" height="520" frameborder="0" src="http://team.cartodb.com/viz/657d3f6c-1ce7-11e4-b595-0e230854a1cb/embed_map?title=false&amp;description=false&amp;search=false&amp;shareable=true&amp;cartodb_logo=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1|1&amp;sql=&amp;sw_lat=40.68089838511525&amp;sw_lon=-74.08493041992186&amp;ne_lat=40.773261878622634&amp;ne_lon=-73.86520385742188" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
 </div>
 
 <h2 id="static-maps-of-our-trips">Static Maps of Our Trips</h2>
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width="100%" height="520" frameborder="0" src="http://team.cartodb.com/viz/2927add2-0c88-11e4-b81f-0edbca4b5057/embed_map?title=false&amp;description=false&amp;search=false&amp;shareable=true&amp;cartodb_logo=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1|1&amp;sql=&amp;sw_lat=40.701463603604594&amp;sw_lon=-74.06536102294922&amp;ne_lat=40.752848878227404&amp;ne_lon=-73.88477325439453" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
-  </div>
+  <iframe width="100%" height="520" frameborder="0" src="http://team.cartodb.com/viz/2927add2-0c88-11e4-b81f-0edbca4b5057/embed_map?title=false&amp;description=false&amp;search=false&amp;shareable=true&amp;cartodb_logo=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1|1&amp;sql=&amp;sw_lat=40.701463603604594&amp;sw_lon=-74.06536102294922&amp;ne_lat=40.752848878227404&amp;ne_lon=-73.88477325439453" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
 </div>
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width="100%" height="520" frameborder="0" src="http://team.cartodb.com/viz/a6f50f7a-1ce6-11e4-b838-0e73339ffa50/embed_map?title=false&amp;description=false&amp;search=false&amp;shareable=true&amp;cartodb_logo=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1|1&amp;sql=&amp;sw_lat=40.701463603604594&amp;sw_lon=-74.03051376342773&amp;ne_lat=40.752848878227404&amp;ne_lon=-73.92065048217773" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
-  </div>
+  <iframe width="100%" height="520" frameborder="0" src="http://team.cartodb.com/viz/a6f50f7a-1ce6-11e4-b838-0e73339ffa50/embed_map?title=false&amp;description=false&amp;search=false&amp;shareable=true&amp;cartodb_logo=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1|1&amp;sql=&amp;sw_lat=40.701463603604594&amp;sw_lon=-74.03051376342773&amp;ne_lat=40.752848878227404&amp;ne_lon=-73.92065048217773" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
 </div>
 
 <h2 id="some-fun-facts">Some Fun Facts</h2>

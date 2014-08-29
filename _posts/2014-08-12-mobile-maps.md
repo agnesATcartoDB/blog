@@ -24,9 +24,7 @@ So, we’ve solved sizing, but what about dimensionality? With our new Canvas Se
 
 
 <div class="wrap">
-  <div class="wrap-border">
-    <iframe width='100%' height='620' frameborder='0' src='http://team.cartodb.com/viz/4101e074-222e-11e4-b327-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  </div>
+  <iframe width='100%' height='620' frameborder='0' src='http://team.cartodb.com/viz/4101e074-222e-11e4-b327-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 </div>
 
 With this new feature you can create truly responsive visualizations, controlling how your visualization appears for desktop and mobile views. And from here, there are lots of possibilities in how you deliver your visualizations to tell stories with your data. Start using our new editor now, and stay tuned for more news in the coming weeks.
