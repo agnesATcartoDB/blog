@@ -495,6 +495,41 @@ a.btn-blue-tw.btn-background {
   }
 }
 
+
+/* =Newsletter
+----------------------------------------------- */
+
+.subscribe-block {
+  padding: 20px;
+  font-size: 16px;
+  background: #384047;
+  color: #fff;
+  @include border-radius(4px);
+
+  ul {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    > li {
+      width: 50%;
+    }
+  }
+
+  p {
+    background: image-url('layout/marketplace/subscribe.png') no-repeat 0 center;
+    padding-left: 60px;
+  }
+}
+
+.subscribe-block-inner {
+  margin: 0 10px;
+}
+
+.subscribe-block-field {
+  padding-top: 10px;
+}
+
+
 @media (max-width: $large-width) {
   .wrap {
     max-width: 100%;
@@ -534,6 +569,23 @@ a.btn-blue-tw.btn-background {
 
   .blog-aside-inner {
     margin: 0 20px;
+  }
+
+  .subscribe-block {
+    ul {
+      > li {
+        width: 100%;
+      }
+    }
+
+    p {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .subscribe-block-inner {
+    text-align: center;
   }
 }
 
