@@ -1,6 +1,8 @@
 #Mapping the invisible: Looking Into Sin City
 #
-In our second installment, we're going to look into publicly available data from Yelp, specifically, from Las Vegas. The data includes reviews on businesses, mostly restaurants, all around the Greater Las Vegas area. Here, we will show you how you can transform reviews into insightful visualizations.
+In our second installment, we're going to look into [publicly available data from Yelp](http://www.yelp.com/dataset_challenge), specifically, from Las Vegas. The data includes reviews on businesses, mostly restaurants, all around the Greater Las Vegas area. Here, we will show you how you can transform reviews into insightful visualizations.
+
+If you are curious about how we got this data transformed and into CartoDB wait for a future blog post.
 
 ### The New Modern City
 ### 
