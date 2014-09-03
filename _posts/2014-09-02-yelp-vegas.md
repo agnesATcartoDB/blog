@@ -20,17 +20,15 @@ While the map is simple, it is a good starting point to dig deeper. For example,
 
 <iframe width='100%' height='520' frameborder=‘4’ src='http://team.cartodb.com/u/timchung/viz/8d4e3c74-225c-11e4-9a80-0e73339ffa50/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-We take a closer look into the strip, by doing a similar kind of analysis on the tourists. We look into tourists that reviewed the hotels and see what else they reviewed. 
+From the visualization, we can quickly see that most of the establishments were frequented by people who stayed in hotels nearby. Vegas is hot, so maybe it makes sense! For new businesses in Vegas, this is a small insight that could help you decide where you will place your business to attract just the right crowd. In particular, you could dig in further to see exactly what types of reviewers frequent each hotel. 
 
-We then breakdown the reviews by the hotels to get a general idea of where these tourists also frequent. From the visualization, we can easily see that most of the establishments were frequented by people who also reviewed the hotel nearby, suggesting that many of the guests may not venture very far from their hotel. This also suggests that if someone were to start a business on the strip, they should also be very sensitive to what kind of guests each hotel attracts.
-
-
-
-It’s also interesting to look into the price range of the general vegas area, to indicate where things might be considered pricer than others. The visualization below shows that upscale shops tend to be in the southwest area of the strip, whereas more affordable institutions are located on the northern part. 
+Next, we wanted to look at how price range shifted across the Vegas area. Understand price might help uncover what types of clients move in different neighborhoods. The visualization below shows the average price (more read means more expensive) of businesses in each hexagon across the city. 
 
 <iframe width='100%' height='520' frameborder=‘4’ src='http://team.cartodb.com/u/timchung/viz/28fec582-32c3-11e4-8de5-0e73339ffa50/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-We generated the price hexagons through the following code. One can easily transform this code to also indicate other trends in the data, such as where highly rated institutions are or where the institutions are generally populated.
+The most obvious pattern in the map above is that the strip is just plain expensive compared to the rest of the city. You can also see that there might be a slight pattern of more expensive shops on the southwest end of the strip and slightly cheaper shops in the northeast.
+
+We generated the price hexagons using the following SQL. If you are interested, you can transform this code to also visualize other trends in the data (e.g. where highly rated institutions are or where the institutions are generally populated).
 
 	select * from (
 		select the_geom_webmercator, count(points) as shopcount, avg(stars) as avgStars, avg(price) as avgPrice
@@ -54,61 +52,20 @@ We generated the price hexagons through the following code. One can easily trans
 
 ### But What Happens In Vegas, Happens In Phoenix?
 
-The recent rapid growth of Vegas begs the question of whether basic institutions have popped up fast enough to serve the local populace. Here, we compare with Phoenix in two regards — Mexican restaurants and dentists. Mexican restaurants serve whenever the locals like, making their demand relatively variable; whereas dentists require regular visits to sustain their business. 
+In contrast to all the tourism, the recent rapid growth of Vegas's local population opens the door to a few other questions. One in particular we were interested on was whether new shops, restaurants, and services have been built fast enough for the new locals. To explore the idea, we compared Las Vegas with Phoenix in two specific categories — Mexican restaurants and dentists. 
 
-In the visualizations below, we show a distance map by neighborhood to both of these institutions for Phoenix and Las Vegas. The institutions are distinguished by their ratings; red dots indicate stores that are now closed and orange indicates places that don’t have enough ratings, indicating that it’s likely a newer store. From the chart of Mexican restaurants, it seems that no neighborhood is very far from one; however, many new stores have opened up in Sunrise Manor and Charleston Heights. We also see that many of the failed restaurants are also located in the Charleston Heights area, indicating that it may not be as an attractive as a place to start a restaurant. We see a similar tendency in Phoenix, where Tucson shows a larger density of failed Mexican restaurants, whereas higher rated ones are foxed in the Central Phoenix area.
+In the visualizations below, we show a distance map by neighborhood to both of these institutions for Phoenix and Las Vegas. The institutions are distinguished by their ratings; red dots indicate stores that are now closed and orange indicates places that don’t have enough ratings, hinting that it could be a newer business. From the chart of Mexican restaurants, it seems that no neighborhood is very far from one (thank goodness!); however, many new stores have opened up in Sunrise Manor and Charleston Heights. We also see that many of the failed restaurants are also located in the Charleston Heights area, leaving us wondering, is Charleston Heights not as attractive a place to start a restaurant? We see a similar tendency in Phoenix, where Tucson shows a larger density of failed Mexican restaurants, whereas higher rated ones are clustered in the Central Phoenix area.
 
 <iframe width='100%' height='520' frameborder='0' src='http://team.cartodb.com/u/timchung/viz/7f86aae6-294a-11e4-a745-0e230854a1cb/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 <iframe width='100%' height='520' frameborder='0' src='http://team.cartodb.com/u/timchung/viz/ddf9d4fa-32cc-11e4-88ee-0edbca4b5057/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-Using similar logic, we look into the distribution of dentists. Here we note that, in general, the coverage seems better in Vegas than in Phoenix. However, in places like North Las Vegas and Sunrise Manor, there could be some opportunities to open a successful dentist. Given that we haven’t taken a closer look into demographic data, one would have to understand these aspects before starting a business; however, this could give some insight on where opportunities could exist in the future.
+Using a similar approach, we look into the distribution of dentists. Here we note that, in general, the coverage seems better in Vegas than in Phoenix. However, in places like North Las Vegas and Sunrise Manor, there could be some opportunities to open a successful dentist. Given that we haven’t taken a closer look into demographic data, one would have to understand these aspects before starting a business; however, this could give some insight on where opportunities could exist in the future.
 
 <iframe width='100%' height='520' frameborder='0' src='http://team.cartodb.com/u/timchung/viz/224e6bf6-294b-11e4-8e16-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 <iframe width='100%' height='520' frameborder='0' src='http://team.cartodb.com/u/timchung/viz/451b4274-32d0-11e4-9d34-0e230854a1cb/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-The maps above were created using the following SQL. Please note that this code could take a long time to execute.
+The maps above were created using some advanced SQL that [we encourage you to explore](https://gist.github.com/andrewxhill/d29de6b4fc1b6951125a). 
 
-	select * from (
-		select the_geom as the_geom_webmercator, 
-			min(ST_Distance_Sphere(st_transform(st_centroid(the_geom), 4326), st_transform(otherGeom, 4326)))/1600 as minDist 
-		from (
-    			select grids.the_geom, st_collect(st_transform(timchung.allbusiness.the_geom, 3857)) as otherGeom
-			from (
-				SELECT CDB_HexagonGrid(
-					ST_SetSRID(
-						ST_Envelope(
-							ST_Collect(
-								st_transform(the_geom, 3857)
-							)
-						),
-					3857),
-				500) as the_geom
-				from timchung.allbusiness
-				where state in ('AZ')
-
-				union
-				
-				SELECT CDB_HexagonGrid(
-					ST_SetSRID(
-						ST_Envelope(
-							ST_Collect(
-								st_transform(the_geom, 3857)
-							)
-						),
-					3857),
-				500) as the_geom
-				from timchung.allbusiness
-				where state in ('NV')) as grids
-	
-		where position('Mexican' in categories)>0
-		and open
-		group by grids.the_geom
-	
-	) as gridsPoints
-	
-	group by the_geom) as allGrid 
-	where minDist<7
-
-This is just another simple example of how you can use CartoDB to turn data into insights. If you’re interested in checking it out [create a free account](http://cartodb.com/) and start mapping your own data today.
+This is just a few more examples of how you can use CartoDB to explore your data. If you’re interested in checking it out [create a free account](http://cartodb.com/) and start mapping your own data today.
 
 
