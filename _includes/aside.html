@@ -16,9 +16,11 @@
         <div class="blog-subscribe">
           <div class="blog-aside-inner">
             <h2 class="tit-module">Subscribe</h2>
-            <p class="h-vspace-m">Stay tuned and subscribe to our mailing list</p>
+            {% unless page.tech_newsletter %}
+              <p class="h-vspace-m">Stay tuned and subscribe to our mailing list:</p>
 
-            {% include mailchimp.html %}
+              {% include mailchimp.html %}
+            {% endunless %}
 
             <p class="post-info-subscribe">
               <span class="btn-follow">
