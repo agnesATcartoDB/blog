@@ -1,24 +1,30 @@
-#Mapping the invisible: Looking Into Sin City
-#
-In our second installment, we're going to look into [publicly available data from Yelp](http://www.yelp.com/dataset_challenge), specifically, from Las Vegas. The data includes reviews on businesses, mostly restaurants, all around the Greater Las Vegas area. Here, we will show you how you can transform reviews into insightful visualizations.
+#Mapping the invisible: under the covers of Sin City Yelp reviews
 
-If you are curious about how we got this data transformed and into CartoDB wait for a future blog post.
+Today, we're going to look into [publicly available data from Yelp](http://www.yelp.com/dataset_challenge), specifically, from Las Vegas. The data includes reviews on businesses, mostly restaurants, all around the Greater Las Vegas area. We thought this data would be interesting to build our latest installment of [Mapping the Invisible](http://blog.cartodb.com/categories/mapping-the-invisible/). Using this data has some restrictions from Yelp, so we suggest you look over their use agreement before going too deep But we do think the methods we show you here could inspire you to extract new understanding from your own data.
+
+Here, we will show you how you can transform reviews into insightful visualizations. Using the Yelp data itself may be a bit tricky, as the format of the associations takes a small bit of munging. If you are curious how we did this specific bit of work, you can take a look at a [some notes here](https://gist.github.com/andrewxhill/8555086907bd7b06f9f3). For now, we'll focus a bit on some neat insights from the data!
 
 ### The New Modern City
-### 
-Over the last 20 years, the population of metropolitan Las Vegas has exploded from 770,000 in 1990 to over [2 million in 2013](http://www.lvcva.com/includes/content/images/MEDIA/docs/Population-2013.pdf). This infusion of people is expected to continue as the growth is largely due to [people finding work or moving to retire in the area](http://www.reviewjournal.com/business/economic-report-shows-las-vegas-growth-optimism-are-rise). This has changed the culture of Las Vegas from a tourist town focused on casinos and poker tables to one that is developing other new industries to properly service its own inhabitants. 
 
-Nevertheless, considering the 40 million visitors Vegas sees every year, it would be interesting to take a closer look at the interaction of the city between the tourists and the locals.
+Over the last 20 years, the population of metropolitan Las Vegas has exploded from 770,000 in 1990 to over [2 million in 2013](http://www.lvcva.com/includes/content/images/MEDIA/docs/Population-2013.pdf). This infusion of people is expected to continue as the growth is largely due to [people finding work or moving to retire in the area](http://www.reviewjournal.com/business/economic-report-shows-las-vegas-growth-optimism-are-rise). This has changed the culture of Las Vegas from a tourist town focused on casinos and poker tables to one that is attracting new industries to properly service its booming population. 
 
-### Where the Tourists Roam
+Even in the face of the recent turnover, Las Vegas still hosts 40 million visitors every year. Inspired by many maps before us, we thought it would be interesting to take a closer look at the interaction of the city between the tourists and the locals.
 
-We first take a look at where the tourists generally go, looking at Yelp reviews posted at every institution. We assume users that post less than 20% of their reviews in Vegas are tourists, and then calculate what percentage of reviews were posted by them. From the chart below, we can see that, as expected, most tourists are focused around the Strip, whereas the rest of the city is filled with locals.   
+### Where the Tourists Prefer to Roam
+
+To make this map, we assume users that post less than 20% of their reviews in Vegas are tourists. With this simple division of the data, into tourists and locals, we then calculate what percentage of reviews posted by each category. This can all be done with a small bit of SQL. Next, we make a map to show how the two categories spread out over the city. What pops out is something you might already expect: tourists love to spend time and review businesses on the Strip, whereas the rest of the city is filled with locals.   
 
 <iframe width='100%' height='520' frameborder=‘4’ src='http://team.cartodb.com/u/timchung/viz/417db55c-219b-11e4-89ab-0e10bcd91c2b/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-We take a closer look into the strip, by doing a similar kind of analysis on the tourists. We look into tourists that reviewed the hotels and see what else they reviewed. We then breakdown the reviews by the hotels to get a general idea of where these tourists also frequent. From the visualization, we can easily see that most of the establishments were frequented by people who also reviewed the hotel nearby, suggesting that many of the guests may not venture very far from their hotel. This also suggests that if someone were to start a business on the strip, they should also be very sensitive to what kind of guests each hotel attracts.
+While the map is simple, it is a good starting point to dig deeper. For example, if we focus on just the tourists, we can start pulling interesting information about how they interact with the city. One thing we can do is look at the hotels the tourists review, or more directly, we can assume that if a tourist reviews a hotel that the tourist stayed in that hotel. That could be interesting! So armed with this little insight into our tourists, let's look at how visitors of different hotels look at the city. 
 
 <iframe width='100%' height='520' frameborder=‘4’ src='http://team.cartodb.com/u/timchung/viz/8d4e3c74-225c-11e4-9a80-0e73339ffa50/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+We take a closer look into the strip, by doing a similar kind of analysis on the tourists. We look into tourists that reviewed the hotels and see what else they reviewed. 
+
+We then breakdown the reviews by the hotels to get a general idea of where these tourists also frequent. From the visualization, we can easily see that most of the establishments were frequented by people who also reviewed the hotel nearby, suggesting that many of the guests may not venture very far from their hotel. This also suggests that if someone were to start a business on the strip, they should also be very sensitive to what kind of guests each hotel attracts.
+
+
 
 It’s also interesting to look into the price range of the general vegas area, to indicate where things might be considered pricer than others. The visualization below shows that upscale shops tend to be in the southwest area of the strip, whereas more affordable institutions are located on the northern part. 
 
