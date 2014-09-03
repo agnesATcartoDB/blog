@@ -45,6 +45,26 @@ js_asset: "post"
     </div>
   </article>
 
+  {% if page.tech_newsletter %}
+  <div class="h-vspace-xl">
+    <div class="subscribe-block">
+      <ul class="inb-list">
+        <li class="h-talign">
+          <div class="subscribe-block-inner">
+            <p>Join to recieve news about the<br />CartoDB Developer Program and Platform</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="subscribe-block-inner subscribe-block-field">
+            {% include tech_newsletter.html %}
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  {% endif %}
+
   <div class="post-share">
     <ul class="inb-list h-tupper">
       <li>
@@ -56,22 +76,6 @@ js_asset: "post"
         <a href="{{ page.url | prepend: site.baseurl | prepend: site.url | prepend: '&url=' | prepend: page.title | prepend: 'https://twitter.com/intent/tweet?text=' }}" class="btn btn-medium btn-blue-tw btn-background" target="_blank" title="Share on Twitter">
           <span class="btn-border"><i class="icon i-xxs icons-btn-twitter"></i> Share on Twitter</span>
         </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="subscribe-block">
-    <ul class="inb-list">
-      <li class="h-talign">
-        <div class="subscribe-block-inner">
-          <p>Join to recieve news about the<br />CartoDB Developer Program and Platform</p>
-        </div>
-      </li>
-
-      <li>
-        <div class="subscribe-block-inner subscribe-block-field">
-          {% include tech_newsletter.html %}
-        </div>
       </li>
     </ul>
   </div>

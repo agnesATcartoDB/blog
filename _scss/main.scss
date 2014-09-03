@@ -501,7 +501,7 @@ a.btn-blue-tw.btn-background {
 
 .subscribe-block {
   padding: 20px;
-  font-size: 16px;
+  font: 18px 'Proxima Nova Sb';
   background: #384047;
   color: #fff;
   @include border-radius(4px);
@@ -516,7 +516,7 @@ a.btn-blue-tw.btn-background {
   }
 
   p {
-    background: image-url('layout/marketplace/subscribe.png') no-repeat 0 center;
+    background: image-url('icons/subscribe.png') no-repeat 0 center;
     padding-left: 60px;
   }
 }

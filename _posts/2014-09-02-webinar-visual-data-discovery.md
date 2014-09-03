@@ -17,9 +17,6 @@ CartoDB will be represented by our Senior Scientist, [Andrew Hill](https://andre
 
 > For decades GIS and geospatial data have been trapped on the desktop. Building robust applications or extracting meaningful insights took expensive and difficult to use technologies. All that is changing. In this webinar, we'll look at how geospatial has moved to the web and how you can leverage your own geospatial data to gain insights, create better communications, and tell better stories. We'll focus on CartoDB and how a user can go from data to maps and information in minutes.
 
-[You can sign up for free in the summit web](https://www.brighttalk.com/webcast/9059/122853). 
+[You can sign up for free in the summit web](https://www.brighttalk.com/webcast/9059/122853).
 
 Also, if you want to better understand CartoDB's capabilities, sign up for the [free intro webinar to CartoDB we are giving next Thursday, September 4th](http://on.cartodb.com/webinar-intro/).
-
-
-
