@@ -8,6 +8,9 @@
   title: BI and Analytics
   permalink: '/industries/business-intelligence-and-analytics/'
 -
+  title: Earth Observation and Space
+  permalink: '/industries/earth-observation/'
+-
   title: Education and Research
   permalink: '/industries/education-and-research/'
 -
@@ -17,6 +20,9 @@
   title: Health
   permalink: '/industries/health/'
 -
+  title: Journalism and New Media
+  permalink: '/industries/journalism/'
+-
   title: Natural resources
   permalink: '/industries/natural-resources/'
 -
@@ -25,3 +31,6 @@
 -
   title: Real Estate
   permalink: '/industries/natural-resources/'
+-
+  title: Web and mobile development
+  permalink: '/industries/web-mobile/'
