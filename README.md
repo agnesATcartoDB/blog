@@ -40,6 +40,13 @@ To publish a post in the blog, please follow this workflow:
 
 The Pull Request will be reviewed and commented on, and if everything is ok, merged into master, which will deploy the changes to production.
 
+### Options for post metadata
+
+- `tech_newsletter: true` When writing technical posts, it makes a widget appear at the end of the post
+- `redirect_from: URL` If you want to make a redirection from that URL to the posts URL
+- `layout_color: URL` For putting the super-big background image
+ 
+
 ### Working with drafts
 
 - Save your draft to the _drafts folder
