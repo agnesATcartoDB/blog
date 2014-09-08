@@ -24,7 +24,8 @@ module.exports = function(grunt) {
         src: [
           '*.{ico,png}',
           'feed.*',
-          '**/*.html'
+          '**/*.html',
+          '!rss/index.html'
         ]
       },
       stagingAssets: {
@@ -46,6 +47,16 @@ module.exports = function(grunt) {
         src: "<%= config.dist %>/disallow-robots.txt",
         dest: "robots.txt"
       },
+      stagingRedirect: {
+        options: {
+          bucket: '<%= aws.stagingBucket %>',
+          headers: {
+            "WebsiteRedirectLocation": "/feed.xml"
+          }
+        },
+        cwd: "<%= config.dist %>",
+        src: "rss/index.html"
+      },
       production: {
         options: {
           bucket: '<%= aws.productionBucket %>'
@@ -54,7 +65,8 @@ module.exports = function(grunt) {
         src: [
           '*.{ico,png}',
           'feed.*',
-          '**/*.html'
+          '**/*.html',
+          '!rss/index.html'
         ]
       },
       productionAssets: {
@@ -63,7 +75,7 @@ module.exports = function(grunt) {
           headers: {
             "CacheControl": "max-age=630720000, public",
             "Expires": new Date(Date.now() + 63072000000).toUTCString()
-          },
+          }
         },
         gzip: true,
         src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*.{gif,jpeg,jpg,png}"],
@@ -75,6 +87,16 @@ module.exports = function(grunt) {
         },
         src: "<%= config.dist %>/allow-robots.txt",
         dest: "robots.txt"
+      },
+      productionRedirect: {
+        options: {
+          bucket: '<%= aws.productionBucket %>',
+          headers: {
+            "WebsiteRedirectLocation": "/feed.xml"
+          }
+        },
+        cwd: "<%= config.dist %>",
+        src: "rss/index.html"
       }
     },
     connect: {
@@ -161,13 +183,13 @@ module.exports = function(grunt) {
         }
       },
       test: {
-        command: "jekyll build --config '_config-prod.yml'",
+        command: "jekyll build --config _config.yml,_config-prod.yml",
         options: {
           async: false
         }
       },
       dist: {
-        command: "jekyll build --lsi --config '_config-prod.yml'",
+        command: "jekyll build --lsi --config _config.yml,_config-prod.yml",
         options: {
           async: false
         }
@@ -408,14 +430,16 @@ module.exports = function(grunt) {
     'build',
     's3:staging',
     's3:stagingAssets',
-    's3:stagingRobots'
+    's3:stagingRobots',
+    's3:stagingRedirect'
   ]);
 
   grunt.registerTask('deploy:production', [
     'build',
     's3:production',
     's3:productionAssets',
-    's3:productionRobots'
+    's3:productionRobots',
+    's3:productionRedirect'
   ]);
 
   grunt.registerTask('default', [

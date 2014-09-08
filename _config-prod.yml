@@ -1,35 +1,12 @@
 env: 'production'
 destination: '.tmp'
-title: CartoDB Blog
-description: "All things CartoDB. New features, how-to guides, updates on events and conferences. Learn about CartoDB and online mapping with our blog."
-keywords: "cartodb, map of the week, nonprofits, cartodb partners, examples"
-baseurl: ""
 url: "http://blog.cartodb.com"
-
-markdown: kramdown
-permalink: /:title/
-paginate: 10
-paginate_path: page/:num
-encoding: utf-8
-exclude: ['README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', 'node_modules', 'bower_components', 'Gruntfile.js', 'package.json', 'grunt-aws.example.json', 'grunt-aws.json']
-highlighter: rouge
-gems:
-  - jekyll-redirect-from
 
 cartodb-baseurl: 'http://cartodb.com'
 docs-baseurl: 'http://docs.cartodb.com'
-academy-baseurl: 'http://academy.cartodb.com'
 docs-baseurl: 'http://docs.cartodb.com'
 
 analytics_property_id: 'UA-20934186-3'
 mixpanel_token: '9b1d8a4fb14fa98d50615108b8b0161a'
 mailchimp_id: '88c00b7e33'
 tech_newsletter: 'b85d5d7d87'
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post
