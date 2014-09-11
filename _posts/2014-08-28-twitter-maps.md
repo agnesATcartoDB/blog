@@ -12,7 +12,7 @@ redirect_from:
 
 Earlier last month we released a beta version of [Twitter Maps](http://cartodb.com/solutions/twitter-maps), which gives you the ability to map tweets directly from the CartoDB Editor. Today we are excited to announce the next phase of our Twitter Maps service: general availability for our Enterprise plan customers.
 
-With this new feature you can search for the Twitter activity you'd like to visualize and analyze, select the period of tweets you want, and start mapping—all in a matter of minutes. We are the first geospatial analysis and visualization platform that lets you directly access Twitter data, extract it, and have it instantly available for mapping and analysis, enabling you to build complex visualizations with millions of points—something no other tool is ready to.
+With this new feature you can search for the Twitter activity you'd like to visualize and analyze, select the period of tweets you want, and start mapping—all in a matter of minutes. We are the first geospatial analysis and visualization platform that lets you directly access Twitter data, extract it, and have it instantly available for mapping and analysis, enabling you to build complex visualizations with millions of points—something no other tool is ready to do.
 
 <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/d3GSSYQ.gif" alt="" /></p></div>
 
