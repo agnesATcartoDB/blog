@@ -24,7 +24,7 @@ docs-baseurl: 'http://docs.cartodb-staging.com'
 analytics_property_id: ''
 mixpanel_token: ''
 mailchimp_id: ''
-tech_newsletter: ''
+tech_newsletter_id: ''
 
 defaults:
   -

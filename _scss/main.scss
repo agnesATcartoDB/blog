@@ -501,7 +501,7 @@ a.btn-blue-tw.btn-background {
 
 .subscribe-block {
   padding: 20px;
-  font: 18px 'Proxima Nova Sb';
+  font: 18px/24px 'Proxima Nova Sb';
   background: #384047;
   color: #fff;
   @include border-radius(4px);
@@ -526,7 +526,7 @@ a.btn-blue-tw.btn-background {
 }
 
 .subscribe-block-field {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 
@@ -581,6 +581,7 @@ a.btn-blue-tw.btn-background {
     p {
       display: inline-block;
       margin-bottom: 20px;
+      text-align: left;
     }
   }
 
