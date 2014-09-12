@@ -65,7 +65,7 @@ js_asset: "post"
   </div>
   {% endif %}
 
-  <div class="post-share">
+  <div class="post-share {% if page.show_related_posts == false %}norelated{% endif %}">
     <ul class="inb-list h-tupper">
       <li>
         <a href="{{ page.url prepend: site.baseurl | prepend: site.url | prepend: 'http://facebook.com/sharer/sharer.php?u=' }}" class="btn btn-medium btn-blue-fb btn-background" target="_blank" title="Share on Facebook">
@@ -80,6 +80,7 @@ js_asset: "post"
     </ul>
   </div>
 
+  {% unless page.show_related_posts == false %}
   <div class="post-relations" id="post-relations">
     <h2 class="relations-title"><span>MORE ENTRIES</span></h2>
     <ul class="inb-list lst-post-relations">
@@ -110,5 +111,5 @@ js_asset: "post"
       {% endfor %}
     </ul>
   </div>
+  {% endunless %}
 </div>
-
