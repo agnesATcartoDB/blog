@@ -7,7 +7,6 @@ tags:
 - marketplace
 categories:
 - 'Marketplace'
-# tech_newsletter: true
 layout_color: http://i.imgur.com/SrSR2Jz.png
 ---
 
@@ -15,5 +14,5 @@ At FOSS4G in Denver, three years ago, our team huddled in a house rapidly commit
 
 Many of our team will be there to meet and learn from all the other amazing developers out there. Most important though, we see FOSS4G as the perfect venue to propose our newest project, the Developers Program. This is an initiative we have been thinking about and refining for some time now. If you are curious what it is and want to learn more, [go read our full letter to the community](http://cartodb.com/marketplace).
 
-<div class="wrap"><a href="http://cartodb.com/marketplace"><img src="http://i.imgur.com/kgBF1F6.jpg" alt="" /></a></div>
+<div class="wrap"><a href="http://cartodb.com/marketplace"><img src="http://i.imgur.com/kgBF1F6.jpg" alt="marketplace" /></a></div>
 
