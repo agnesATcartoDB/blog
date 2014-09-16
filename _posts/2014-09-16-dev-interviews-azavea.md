@@ -13,13 +13,13 @@ tech_newsletter: true
 <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/IttBnBL.png" alt=""></p></div>
 
 
-After the great reception at FOSS4G where we presented our [CartoDB Developers Program](http://cartodb.com/marketplace) we want to show developers and companies what it entails to develop on top of the [CartoDB Platform](http://docs.cartodb.com/) and why its the best place to develop and commercialize geospatial products. And what better way to do it that having developers who are already using CartoDB to make business explain their experience using CartoDB. 
+After the great reception at FOSS4G, where we presented our [CartoDB Developers Program](http://cartodb.com/marketplace), we'd like to show developers and companies what it entails to develop on top of the [CartoDB Platform](http://docs.cartodb.com/) and why it's the best place to develop and commercialize geospatial products. And what better way to demonstrate this than by inviting those developers who are already using CartoDB to do business to share their experiences using our product? 
 
-For this first post, welcome [John Branigan](http://twitter.com/johnbranigan) from [Azavea](http://www.azavea.com/). Azavea is a CartoDB [partner](http://www.cartodb.com/partners) specialized in the creation of geographic web and mobile software, as well as geospatial analysis services to enhance decision-making. John has over 13 years experience working in geographic information systems, database design and analysis, web development and design, and has focused for the last two years on managing large scale web application development projects. 
+For this first post, welcome [John Branigan](http://twitter.com/johnbranigan) from [Azavea](http://www.azavea.com/). Azavea is a CartoDB [partner](http://www.cartodb.com/partners) specialized in the creation of geographic web and mobile software, as well as geospatial analysis services to enhance decision-making. John has over 13 years of experience working in geographic information systems, database design and analysis, and web development and design, and has focused for the last two years on managing large-scale web application development projects. 
 
 <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/tEEsXP0.jpg" alt=""></p></div>
 
-### What are your CartoDB powered projects?
+### What are your CartoDB-powered projects?
 
 - **[Visualization of oil producing countries](http://sandbox.azavea.com/cartodbvisualization/)** This was a proof-of-concept, and was my first experience using CartoDB (2012)
 - **[Philadelphia election results](http://www.fels.upenn.edu/voter-map)** (2013)
@@ -34,7 +34,7 @@ For this first post, welcome [John Branigan](http://twitter.com/johnbranigan) fr
 Initially, it was a recommendation from a colleague. I’ve been working with JavaScript mapping libraries since around 2006, and was always hosting my own data in one form or another. Now I rely on CartoDB to handle the data storage and pull it into my applications via the API. The flexibility of pulling tiles that are pre-rendered and designed or pulling GeoJSON and working with it client-side is really great.
 
 
-### What other geospatial technologies do you use, and how does them compare to the CartoDB Platform?
+### What other geospatial technologies do you use, and how do they compare to the CartoDB platform?
 
 I started working in GIS in an ESRI shop, so all of the Arc software is my background. I am comfortable with their desktop software as well as the web services and web servers. Today, I pretty much use QGIS, PostGIS, TileMill, and CartoDB.
 
@@ -49,7 +49,7 @@ Once my data is prepped, and the story I want to tell is structured, I load the 
 
 Having the option to use CartoDB as a PostGIS-enabled data store is incredibly valuable. Spinning up and maintaining my own database server is unnecessary now, and this accelerates project development cycles significantly. I’m also relying quite a bit on the APIs for pulling data into my apps.
 
-### If you would have to explain to a fellow dev what are CartoDB's 3 best things, what would they be? 
+### If you had to explain to a fellow dev what CartoDB's 3 best qualities are, what would they be? 
 
 A hosted, open source, spatial database. Save (at least) days of DevOps.
 
@@ -59,9 +59,9 @@ CartoCSS and styling wizards - I’ve spent a lot of time doing cartography in d
 
 <hr>
 
-We thank John and Azavea for taking the time to share their experience with CartoDB. If you are interested in creating geospatial products using the CartoDB Platform, take a look at this intro presentation: [CartoDB for Developers](http://cartodb.com/webinars/2014-07-23-cartodb-for-developers.html).
+We thank John and Azavea for taking the time to share his experiences with CartoDB. If you are interested in creating geospatial products using the CartoDB platform, take a look at this intro presentation: [CartoDB for Developers](http://cartodb.com/webinars/2014-07-23-cartodb-for-developers.html).
 
-If you are already developing geospatial products using CartoDB, take a look at our [Developers Program](http://cartodb.com/marketplace). Stay tuned for more developer interviews. And if you want to share your experience, write to stories@cartodb.com
+If you are already developing geospatial products using CartoDB, take a look at our [Developers Program](http://cartodb.com/marketplace), and stay tuned for more developer interviews. And if you'd like to share your experiences, please write to stories@cartodb.com.
 
 
 
