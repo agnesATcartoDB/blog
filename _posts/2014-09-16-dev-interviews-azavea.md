@@ -1,5 +1,5 @@
 ---
-title: 'Developer interviews: John Braningan from Azavea'
+title: 'Developer interviews: John Branigan from Azavea'
 tags:
 - cartodb
 - webinar
