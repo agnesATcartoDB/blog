@@ -15,7 +15,7 @@ tech_newsletter: true
 
 After the great reception at FOSS4G, where we presented our [CartoDB Developers Program](http://cartodb.com/marketplace), we'd like to show developers and companies what it entails to develop on top of the [CartoDB Platform](http://docs.cartodb.com/) and why it's the best place to develop and commercialize geospatial products. And what better way to demonstrate this than by inviting those developers who are already using CartoDB to do business to share their experiences using our product? 
 
-<!--more--!>
+<!--more-->
 
 For this first post, welcome [John Branigan](http://twitter.com/johnbranigan) from [Azavea](http://www.azavea.com/). Azavea is a CartoDB [partner](http://www.cartodb.com/partners) specialized in the creation of geographic web and mobile software, as well as geospatial analysis services to enhance decision-making. John has over 13 years of experience working in geographic information systems, database design and analysis, and web development and design, and has focused for the last two years on managing large-scale web application development projects. 
 
