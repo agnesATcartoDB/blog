@@ -55,7 +55,7 @@ The Pull Request will be reviewed and commented on, and if everything is ok, mer
 
 ### Excerpts
 
-Normally the excerpts of the posts take the first paragraph of the content (it can be an image), but you can override this by placing a `<!--more--!>` tag in the text. The description meta of the page comes from this excerpt, unless you specifically set `description:` in the Front Matter.
+Normally the excerpts of the posts take the first paragraph of the content (it can be an image), but you can override this by placing a `<!--more-->` tag in the text. The description meta of the page comes from this excerpt, unless you specifically set `description:` in the Front Matter.
 
 
 ### Adding images / iframes
