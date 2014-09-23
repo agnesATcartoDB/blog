@@ -2,16 +2,13 @@
 title: 'Developer interviews: John Branigan from Azavea'
 tags:
 - cartodb
-- webinar
-- visual data discovery
-- analytics
+- developer interviews
 categories:
 - 'Marketplace'
 tech_newsletter: true
 ---
 
 <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/IttBnBL.png" alt=""></p></div>
-
 
 After the great reception at FOSS4G, where we presented our [CartoDB Developers Program](http://cartodb.com/marketplace), we'd like to show developers and companies what it entails to develop on top of the [CartoDB Platform](http://docs.cartodb.com/) and why it's the best place to develop and commercialize geospatial products. And what better way to demonstrate this than by inviting those developers who are already using CartoDB to do business to share their experiences using our product? 
 
