@@ -12,7 +12,7 @@ categories:
 
 In Southern Spain there is a city that was once the capital of Hispania Baetica during the Roman Empire. At present it is well known because of its incredible cultural and monumental patrimony: Cordoba, in the community of Andalusia. Thanks to its historic legacy, the old town of Cordoba was recognized in 1994 as a World Heritage Site (the Mosque-Cathedral and also to all the streets and buildings around it).
  
-In this blog post we show you how the [Ubran Planning Department](http://www.gmucordoba.es/) of the Cordoba City Council, fulfilling one of the main objectives of providing information to citizens in a simple and comprehensive way, has made use of CartoDB to visualize important data of the area.
+In this blog post we show you how the [Urban Planning Department](http://www.gmucordoba.es/) of the Cordoba City Council, fulfilling one of the main objectives of providing information to citizens in a simple and comprehensive way, has made use of CartoDB to visualize important data of the area.
 
 <!--more-->
 
