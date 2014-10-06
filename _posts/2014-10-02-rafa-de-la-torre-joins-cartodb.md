@@ -5,6 +5,7 @@ tags:
 - team
 categories:
 - 'Team members'
+- 'New hires'
 ---
 <div class="wrap"><p><a href="{{page.url}}" class="wrap-border"><img src="/img/posts/2014-10-02-rafa-de-la-torre-joins-cartodb/rafadelatorre_cartodb.jpg" alt="Rafa de la Torre CartoDB" /></a></p></div>
 
