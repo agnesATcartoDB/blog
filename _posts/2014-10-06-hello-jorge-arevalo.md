@@ -5,6 +5,7 @@ tags:
 - team
 categories:
 - 'Team members'
+- 'New hires'
 ---
 <div class="wrap"><p><a href="{{page.url}}" class="wrap-border"><img src="/img/posts/2014-10-06-hello-jorge-arevalo/jorge-arevalo-cartodb.jpg" alt="Jorge Arévalo CartoDB" /></a></p></div>
 
