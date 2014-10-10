@@ -9,9 +9,9 @@ categories:
 ---
 <div class="wrap"><p><a href="{{page.url}}" class="wrap-border"><img src="/img/posts/2014-10-10-cartodb-for-the-classroom/cartodb-schoolbus.jpg" alt="Jorge Arévalo CartoDB" /></a></p></div>
 
-We think a lot about how mapping and technology work in the classroom. We've always felt that CartoDB could be used to support education in a diverse set of classes and be a go to tool for educators wanting to expose students to diverse technologies that also can lead to research, jobs, and innovation. We also know that educators have to work really hard with typically small budgets for anything more than there own time. 
+We think a lot about how mapping and technology work in the classroom. We've always felt that CartoDB could be used to support education in a diverse set of classes and be a go to tool for educators wanting to expose students to diverse technologies that also can lead to research, jobs, and innovation. We also know that educators have to work really hard with typically small budgets for anything more than their own time. 
 
-One of the thigns we have learned in our own work with CartoDB is that limits can make the tool hard to teach. In particular, when you teach someone how to map or how to manipulate data, restrictions on the number of datasets your students can use is a pain point without many solutions. So some of you may have noticed, today we've rolled out our own solution to this problem...
+One of the thigns we have learned in our own work with CartoDB is that limits can make the tool hard to teach. In particular, when you teach someone how to map or manipulate data, restrictions on the number of datasets your students can use is a pain point without many solutions. So, as some of you may have noticed, today we've rolled out our own solution to this problem...
 
 **Unlimited tables for students and educators**
 
