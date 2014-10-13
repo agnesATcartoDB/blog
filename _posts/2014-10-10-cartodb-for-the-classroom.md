@@ -7,7 +7,7 @@ categories:
 - 'Education'
 - 'New features'
 ---
-<div class="wrap"><p><a href="{{page.url}}" class="wrap-border"><img src="/img/posts/2014-10-10-cartodb-for-the-classroom/cartodb-schoolbus.jpg" alt="Jorge Arévalo CartoDB" /></a></p></div>
+<div class="wrap"><p><a href="{{page.url}}" class="wrap-border"><img src="/img/posts/2014-10-10-cartodb-for-the-classroom/cartodb-schoolbus.jpg" alt="CartoDB goes to school" /></a></p></div>
 
 We think a lot about how mapping and technology work in the classroom. We've always felt that CartoDB could be used to support education in a diverse set of classes and be a go to tool for educators wanting to expose students to technologies that also can lead to research, jobs, and innovation. We also know that educators have to work really hard with typically small budgets for anything more than their own time. 
 
