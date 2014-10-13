@@ -8,6 +8,7 @@ categories:
 - 'Education'
 - 'CartoDB.js'
 ---
+<div class="wrap"><p><a href="{{page.url}}" class="wrap-border"><img src="/img/posts/2014-10-10-cartodb-for-the-classroom/cartodbjs-ground-up.jpg" alt="Jorge Arévalo CartoDB" /></a></p></div>
 
 CartoDB just released **Lesson One** of a new Academy course called [CartoDB.js from the ground up](http://academy.cartodb.com/courses/03-cartodbjs-ground-up/lesson-1.html). This will be the first in a couple of courses on CartoDB.js, starting with the basics.
 
