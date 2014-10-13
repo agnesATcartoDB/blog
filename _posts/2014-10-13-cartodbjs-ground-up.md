@@ -4,9 +4,11 @@ tags:
 - cartodb
 - cartodb.js
 - education
+- academy
 categories:
 - 'Education'
 - 'CartoDB.js'
+- 'Academy'
 ---
 <div class="wrap"><p><a href="{{page.url}}" class="wrap-border"><img src="/img/posts/2014-10-13-cartodbjs-ground-up/cartodbjs-ground-up.jpg" alt="Academy" /></a></p></div>
 
