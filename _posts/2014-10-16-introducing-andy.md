@@ -1,4 +1,13 @@
-#Introducing Andy!
+---
+title: 'Introducing Andy Eschbacher!'
+tags:
+- cartodb
+- team
+categories:
+- 'Team members'
+- 'New hires'
+---
+<div class="wrap"><p><a href="{{page.url}}" class="wrap-border"><img src="/img/posts/2014-10-16-introducing-andy/andy.jpg" alt="Andy Eschbacher" /></a></p></div>
 
 As the New York team continues setting up our new home in Williamsburg, we're excited to introduce our newest addition. World, meet Andy. 
 
