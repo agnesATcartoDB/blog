@@ -5,3 +5,5 @@ _site
 .tmp/
 .ruby-version
 grunt-aws.json
+!bower_components/cdbui/dist/css/
+

@@ -1,0 +1,114 @@
+// 404
+// --------------------------------------------------
+
+@import '../bower_components/cdbui/scss/helpers/_clearfix';
+
+body {
+  text-align: center;
+}
+
+.Content {
+  min-height: 100%;
+  padding: 60px 0;
+  background: url('../img/backgrounds/404.png') center;
+}
+
+.LinksLst {
+  font-weight: 400;
+  font-size: 14px;
+
+  > li {
+    margin-left: 60px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  a {
+    margin-bottom: 30px;
+  }
+}
+
+.Brand--grey {
+  display: block;
+  width: 36px;
+  height: 48px;
+  background: url('../img/brand-grey.svg') no-repeat;
+}
+
+.no-svg {
+  .Brand--grey {
+    background-image: url('../img/brand-grey.png');
+  }
+}
+
+
+// Compass
+// --------------------------------------------------
+
+.Compass {
+  width: 142px;
+  height: 142px;
+}
+
+.Compass-case,
+.Compass-needle {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 142px;
+  height: 142px;
+}
+
+.Compass-case {
+  background: url('../img/compass-case.svg') no-repeat;
+}
+
+.Compass-needle {
+  background: url('../img/compass-needle.svg') no-repeat;
+}
+
+.no-svg {
+  .Compass-case {
+    background-image: url('../img/compass-case.png');
+  }
+
+  .Compass-needle {
+    background-image: url('../img/compass-needle.png');
+  }
+}
+
+
+// Media queries
+// --------------------------------------------------
+
+.mobileCols {
+  @extend %clearfix;
+}
+
+@media (max-width: 640px) {
+  .Content {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .mobileCols-col {
+    margin-bottom: 0;
+  }
+
+  .mobileCols-col--4,
+  .mobileCols-col--8 {
+    float: left;
+  }
+
+  .mobileCols-col--4 {
+    width: 40%;
+  }
+
+  .mobileCols-col--8 {
+    width: 60%;
+  }
+}
