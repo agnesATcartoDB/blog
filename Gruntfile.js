@@ -37,7 +37,7 @@ module.exports = function(grunt) {
           },
         },
         gzip: true,
-        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*.{gif,jpeg,jpg,png}"],
+        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*.{gif,jpeg,jpg,png,svg}"],
         cwd: "<%= config.dist %>"
       },
       stagingRobots: {
@@ -78,7 +78,7 @@ module.exports = function(grunt) {
           }
         },
         gzip: true,
-        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*.{gif,jpeg,jpg,png}"],
+        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*.{gif,jpeg,jpg,png,svg}"],
         cwd: "<%= config.dist %>"
       },
       productionRobots: {
@@ -200,7 +200,7 @@ module.exports = function(grunt) {
         src: [
           '<%= config.dist %>/js/**/*.js',
           '<%= config.dist %>/css/{,*/}*.css',
-          '<%= config.dist %>/img/**/*.{gif,jpeg,jpg,png}',
+          '<%= config.dist %>/img/**/*.{gif,jpeg,jpg,png,svg}',
           '<%= config.dist %>/fonts/{,*/}*.*'
         ]
       }
@@ -210,7 +210,12 @@ module.exports = function(grunt) {
         files: {
           '<%= config.dist %>/css/main.css': [
             '_scss/{,*/}*.css',
-            '<%= config.app %>/css/{,*/}*.css'
+            '<%= config.app %>/css/{,*/}*.css',
+            '!<%= config.app %>/css/404.css'
+          ],
+          '<%= config.dist %>/css/404.css': [
+            'bower_components/cdbui/dist/css/cdbui-flat.css',
+            '<%= config.app %>/css/404.css'
           ]
         }
       }
@@ -219,6 +224,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           '_site/js/main.js': ['.tmp/js/main.js'],
+          '_site/js/404.js': ['.tmp/js/404.js'],
           '_site/js/vendor.js': ['.tmp/js/vendor.js'],
           '_site/js/post.js': ['_js/post.js']
         }
@@ -238,6 +244,10 @@ module.exports = function(grunt) {
             'bower_components/cdbui/js/cdbui/cdbui.tooltip.js',
             '_js/app.js',
             '_js/index.js'
+          ],
+          '.tmp/js/404.js': [
+            '_js/app.js',
+            '_js/404.js'
           ]
         }
       }
@@ -315,7 +325,7 @@ module.exports = function(grunt) {
             '*.{ico,png,txt}',
             'feed.*',
             '**/*.html',
-            'img/**/*.{gif,jpeg,jpg,png}'
+            'img/**/*.{gif,jpeg,jpg,png,svg}'
           ]
         }, {
           expand: true,
@@ -339,7 +349,7 @@ module.exports = function(grunt) {
         expand: true,
         dot: true,
         cwd: 'img',
-        src: '**/*.{gif,jpeg,jpg,png}',
+        src: '**/*.{gif,jpeg,jpg,png,svg}',
         dest: '<%= config.dist %>/img/'
       }
     },

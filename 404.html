@@ -1,0 +1,42 @@
+---
+layout: fourohfour
+title: 404
+js_asset: "404"
+---
+<div class="Content js-Content">
+  <div class="inner">
+    <div class="mobileCols h-vspace-xl">
+      <div class="mobileCols-col mobileCols-col--4 h-vspace-l">
+        <div class="Compass js-Compass h-iblock h-pr">
+          <div class="Compass-case"></div>
+          <div class="Compass-needle js-Compass-needle"></div>
+        </div>
+      </div>
+
+      <div class="mobileCols-col mobileCols-col--8">
+        <div class="h-vspace-l">
+          <h1 class="h-tupper Title Title--xs">What a pity, the page you are looking for doesn’t exist</h1>
+        </div>
+
+        <a href="{{ site.baseurl }}/" class="Btn Btn--l Btn--blue is-highlight h-tupper">
+          <span>Back to the homepage</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="h-vspace-l">
+      <ul class="LinksLst inb-list h-tupper">
+        <!-- li><a href="#">industries</a></li -->
+        <li><a href="{{ '/gallery/' | prepend: site.cartodb-baseurl }}">Gallery</a></li>
+        <li><a href="{{ '/docs/' | prepend: site.cartodb-baseurl }}">Help</a></li>
+        <li><a href="{{ '/pricing/' | prepend: site.cartodb-baseurl }}">Pricing</a></li>
+        <li><a href="{{ '/enterprise/' | prepend: site.cartodb-baseurl }}">Enterprise</a></li>
+        <li><a href="{{ site.blog-baseurl }}">Blog</a></li>
+        <li><a href="{{ '/signup' | prepend: site.cartodb-baseurl }}">Signup</a></li>
+        <li><a href="{{ '/login' | prepend: site.cartodb-baseurl }}">Login</a></li>
+      </ul>
+    </div>
+
+    <a href="{{ site.cartodb-baseurl }}" class="h-iblock"><div class="Brand--grey"></div></a>
+  </div>
+</div>
